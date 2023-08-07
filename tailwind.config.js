@@ -2,7 +2,13 @@
 module.exports = {
   content: ["./views/**/*.ejs"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        montserrat: ["Montserrat", "sans-serif"],
+        poppins: ["Poppins", "sans-serif"],
+        heebo: ["Heebo", "sans-serif"],
+      },
+    },
   },
   plugins: [],
 };
