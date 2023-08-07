@@ -2,3 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 @import url("https://fonts.googleapis.com/css2?family=Heebo&family=Montserrat&family=Poppins&display=swap");
+
+/* footer bg style */
+footer {
+  position: relative;
+  background: url(../../assets/images/footer-bg.png) no-repeat bottom center;
+  background-size: contain;
+}
