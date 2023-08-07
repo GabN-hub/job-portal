@@ -629,21 +629,13 @@ video {
 .border-gray-900\/10 {
   border-color: rgb(17 24 39 / 0.1);
 }
-.bg-white {
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
 .bg-btngreen {
   --tw-bg-opacity: 1;
   background-color: rgb(38 174 97 / var(--tw-bg-opacity));
 }
-.bg-pink-500 {
+.bg-white {
   --tw-bg-opacity: 1;
-  background-color: rgb(236 72 153 / var(--tw-bg-opacity));
-}
-.bg-pink-300 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(249 168 212 / var(--tw-bg-opacity));
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 .px-4 {
   padding-left: 1rem;
