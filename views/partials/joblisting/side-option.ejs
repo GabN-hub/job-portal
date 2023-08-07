@@ -1,0 +1,12 @@
+<div class="bg-white rounded px-4 py-3 border shadow-md">
+    <div class="border-b-2">
+      <h4 class="p-2"><%= sectionHeader %></h4>
+    </div>
+    <ul class="flex flex-col gap-2">
+
+    <% sectionArray.forEach((array) => { %>
+    <%- include("../../components/molecules/salary-section", array) %>
+    <% }) %>
+    
+    </ul>
+</div>
