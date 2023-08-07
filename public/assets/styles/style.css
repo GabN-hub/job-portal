@@ -732,9 +732,9 @@ video {
 .tracking-tight {
   letter-spacing: -0.025em;
 }
-.text-blue-500 {
+.text-description {
   --tw-text-opacity: 1;
-  color: rgb(59 130 246 / var(--tw-text-opacity));
+  color: rgb(112 127 140 / var(--tw-text-opacity));
 }
 .text-gray-400 {
   --tw-text-opacity: 1;
@@ -756,17 +756,13 @@ video {
   --tw-text-opacity: 1;
   color: rgb(79 70 229 / var(--tw-text-opacity));
 }
-.text-white {
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-.text-description {
-  --tw-text-opacity: 1;
-  color: rgb(112 127 140 / var(--tw-text-opacity));
-}
 .text-title {
   --tw-text-opacity: 1;
   color: rgb(51 78 111 / var(--tw-text-opacity));
+}
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 .transition {
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
@@ -786,13 +782,13 @@ footer {
 .hover\:tracking-wide:hover {
   letter-spacing: 0.025em;
 }
-.hover\:text-green-500:hover {
-  --tw-text-opacity: 1;
-  color: rgb(34 197 94 / var(--tw-text-opacity));
-}
 .hover\:text-btngreen:hover {
   --tw-text-opacity: 1;
   color: rgb(38 174 97 / var(--tw-text-opacity));
+}
+.hover\:text-green-500:hover {
+  --tw-text-opacity: 1;
+  color: rgb(34 197 94 / var(--tw-text-opacity));
 }
 @media (min-width: 640px) {
 
