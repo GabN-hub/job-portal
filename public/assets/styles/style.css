@@ -554,6 +554,9 @@ video {
 .mt-6 {
   margin-top: 1.5rem;
 }
+.inline {
+  display: inline;
+}
 .flex {
   display: flex;
 }
@@ -563,11 +566,11 @@ video {
 .hidden {
   display: none;
 }
+.h-16 {
+  height: 4rem;
+}
 .h-6 {
   height: 1.5rem;
-}
-.h-7 {
-  height: 1.75rem;
 }
 .h-full {
   height: 100%;
@@ -601,6 +604,9 @@ video {
 }
 .gap-3 {
   gap: 0.75rem;
+}
+.gap-4 {
+  gap: 1rem;
 }
 .gap-8 {
   gap: 2rem;
@@ -671,9 +677,16 @@ video {
 .font-montserrat {
   font-family: Montserrat, sans-serif;
 }
+.font-poppins {
+  font-family: Poppins, sans-serif;
+}
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
+}
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
 }
 .text-4xl {
   font-size: 2.25rem;
@@ -691,12 +704,15 @@ video {
   font-size: 0.875rem;
   line-height: 1.25rem;
 }
-.text-xs {
-  font-size: 0.75rem;
-  line-height: 1rem;
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
 }
 .font-bold {
   font-weight: 700;
+}
+.font-medium {
+  font-weight: 500;
 }
 .font-semibold {
   font-weight: 600;
@@ -715,6 +731,10 @@ video {
 }
 .tracking-tight {
   letter-spacing: -0.025em;
+}
+.text-blue-500 {
+  --tw-text-opacity: 1;
+  color: rgb(59 130 246 / var(--tw-text-opacity));
 }
 .text-gray-400 {
   --tw-text-opacity: 1;
@@ -740,6 +760,14 @@ video {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
+.text-description {
+  --tw-text-opacity: 1;
+  color: rgb(112 127 140 / var(--tw-text-opacity));
+}
+.text-title {
+  --tw-text-opacity: 1;
+  color: rgb(51 78 111 / var(--tw-text-opacity));
+}
 .transition {
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
@@ -748,13 +776,23 @@ video {
   transition-duration: 150ms;
 }
 @import url("https://fonts.googleapis.com/css2?family=Heebo&family=Montserrat&family=Poppins&display=swap");
-.hover\:text-gray-500:hover {
-  --tw-text-opacity: 1;
-  color: rgb(107 114 128 / var(--tw-text-opacity));
+
+/* footer bg style */
+footer {
+  position: relative;
+  background: url(../../assets/images/footer-bg.png) no-repeat bottom center;
+  background-size: contain;
 }
-.hover\:text-gray-900:hover {
+.hover\:tracking-wide:hover {
+  letter-spacing: 0.025em;
+}
+.hover\:text-green-500:hover {
   --tw-text-opacity: 1;
-  color: rgb(17 24 39 / var(--tw-text-opacity));
+  color: rgb(34 197 94 / var(--tw-text-opacity));
+}
+.hover\:text-btngreen:hover {
+  --tw-text-opacity: 1;
+  color: rgb(38 174 97 / var(--tw-text-opacity));
 }
 @media (min-width: 640px) {
 
