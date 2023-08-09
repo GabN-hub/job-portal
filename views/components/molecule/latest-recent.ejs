@@ -1,0 +1,19 @@
+<div class="feature-buttons bg-btngreen mb-10 py-3 px-2 flex rounded max-w-sm md:mx-auto" x-data="{ latestActive: true, recentActive: false }">
+  <div
+    class="w-1/2 py-3 px-4 text-center rounded-tl rounded-bl transition duration-1000 ease-in-out cursor-pointer"
+    x-bind:class="{ 'bg-white': latestActive, 'bg-transparent': !latestActive }"
+    x-on:click="latestActive = true; recentActive = false;"
+  >
+    <a class="font-semibold transition duration-1000 ease-in-out" x-bind:class="{ 'text-white': !latestActive, 'text-btngreen': latestActive }">
+      Latest Jobs
+    </a>
+  </div>
+  
+  <div 
+    class="w-1/2 py-3 px-4 text-center rounded-tl rounded-bl transition duration-1000 ease-in-out cursor-pointer"
+    x-bind:class="{ 'bg-white': recentActive, 'bg-transparent': !recentActive }"
+    x-on:click="recentActive = true; latestActive = false;"
+  >
+    <a class="font-semibold transition duration-1000 ease-in-out" x-bind:class="{ 'text-white': !recentActive, 'text-btngreen': recentActive }">Recent Jobs</a>
+  </div>
+</div>

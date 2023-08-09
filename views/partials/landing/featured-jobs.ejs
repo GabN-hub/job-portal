@@ -1,13 +1,8 @@
-<div class="bg-blue-500">
+<div class="bg-white">
   <section class="featured-jobs bg-white min-h-screen w-10/12 mx-auto py-20 lg:max-w-5xl xl:max-w-screen-xl">
-    <div class="feature-buttons buttons mb-10 py-3 px-2 flex rounded max-w-sm md:mx-auto">
-      <div class="w-1/2 py-3 px-4 bg-red-500 text-center rounded-tl rounded-bl">
-        <a class="text-white font-semibold">Latest Jobs</a>
-      </div>
-      <div class="w-1/2 py-3 px-4 bg-pink-500 text-center rounded-tr rounded-br">
-        <a class="text-white font-semibold">Recent Jobs</a>
-      </div>
-    </div>
+   
+    <%- include('../../components/molecule/latest-recent'); %>
+
     <div class="featured-jobs-container grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
       <!-- featured job card - JOB 1 -->
           <% const featuredCardContent = [
