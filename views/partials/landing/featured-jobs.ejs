@@ -56,14 +56,14 @@
             }
             ]; %>
 
-<% featuredCardContent.forEach(element => { %>
- <%- include ('../../components/molecule/featured-card', element); %>
-<% }) %>
+        <% featuredCardContent.forEach(element => { %>
+        <%- include ('../../components/molecule/featured-card', element); %>
+        <% }) %>
             
     </div>
     <!-- browse jobs button -->
-    <div class="mx-auto mt-10 w-max bg-btngreen rounded py-3 px-7">
-      <p class="font-montserrat text-white">BROWSE ALL JOBS</p>
-    </div>
+    <%- include('../../components/atom/btngreen', { btnText: 'BROWSE ALL JOBS' }); %>
+    
+   
   </section>
 </div>
