@@ -10,14 +10,9 @@
     <% } %>
 
     <!-- heart icons -->
-    <div class="heart-white bg-btngreen rounded-full py-1 px-2 cursor-pointer"
-      x-data="{ redActive: false }"
-      x-bind:class="{'text-red-500': redActive, 'text-white': !redActive}"
-      x-on:click="redActive = !redActive"
-    >
-    <i class="fa-solid fa-heart text-white hover:text-red-500" x-bind:class="{'text-red-500': redActive, 'text-white': !redActive}"></i>
-</div>
-
+    <div class="heart-white bg-btngreen rounded-full py-1 px-2 cursor-pointer" x-data="{ redActive: false }" x-bind:class="{'text-red-500': redActive, 'text-white': !redActive}" x-on:click="redActive = !redActive">
+      <i class="fa-solid fa-heart text-white hover:text-red-500 duration-500 ease-in-out" x-bind:class="{'text-red-500': redActive, 'text-white': !redActive}"></i>
+    </div>
   </div>
 
   <!-- contains the image, text, and button -->

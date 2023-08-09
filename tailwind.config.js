@@ -12,6 +12,7 @@ module.exports = {
         description: "#707f8c",
         address: "#8492af",
         btngreen: "#26ae61",
+        grayBg: "#f8fafb",
       },
     },
   },

@@ -4,7 +4,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Heebo&family=Montserrat&family=Poppins&display=swap");
 
 * {
- font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 /* footer bg style */
 footer {
@@ -14,7 +14,7 @@ footer {
 }
 
 /* landing page - hero section style */
-main {
+.hero-bg {
   background: linear-gradient(to right, rgba(50, 50, 50, 1) 20%, rgba(50, 50, 50, 0.95) 50%, rgba(50, 50, 50, 0.1) 80%, rgba(50, 50, 50, 0) 100%), url(../../assets/images/hero-img.jpg) no-repeat center / cover;
 }
 /* REUSABLE - green highlight */
@@ -57,4 +57,14 @@ main {
   border: 2px solid #26ae61;
   font-weight: 500 !important;
   color: #26ae61;
+}
+/* job categories section */
+.job-categories-card {
+  background: #fff;
+  box-shadow: 0 5px 25px 0 rgba(41, 128, 185, 0.15);
+  -webkit-box-shadow: 0 5px 25px 0 rgba(41, 128, 185, 0.15);
+}
+.category-job {
+  color: #26ae61;
+  background: rgba(38, 174, 97, 0.1);
 }
