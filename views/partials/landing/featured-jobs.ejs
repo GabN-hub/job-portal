@@ -1,0 +1,66 @@
+<section class="featured-jobs bg-white min-h-screen w-10/12 mx-auto py-20 lg:max-w-5xl xl:max-w-screen-xl">
+   
+  <%- include('../../components/molecule/latest-recent'); %>
+
+  <div class="featured-jobs-container grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
+    <!-- featured job card -->
+        <% const featuredCardContent = [
+          {
+            image : "http://utouchdesign.com/themes/envato/escort/assets/img/company_logo_1.png",
+            header: "FULL TIME",
+            subHeader: "Product Redesign",
+            address: "2708 Scenic Way, IL 62373"
+          },
+          {
+            image : "http://utouchdesign.com/themes/envato/escort/assets/img/company_logo_2.png",
+            header: "FULL TIME",
+            subHeader: "New Product Mockup",
+            address: "2708 Scenic Way, IL 62373"
+          },
+          {
+            image : "http://utouchdesign.com/themes/envato/escort/assets/img/company_logo_3.png",
+            header: "PART TIME",
+            subHeader: "Custom Php Developer",
+            address: "3765 C Street, Worcester"
+          },
+          {
+            image : "http://utouchdesign.com/themes/envato/escort/assets/img/company_logo_4.png",
+            header: "PART TIME",
+            subHeader: "Wordpress Developer",
+            address: "2719 Duff Avenue, Winooski"
+          },
+          {
+            image : "http://utouchdesign.com/themes/envato/escort/assets/img/company_logo_5.png",
+            header: "INTERNSHIP",
+            subHeader: "Web Maintenance",
+            address: "2708 Scenic Way, IL 62373"
+          },
+          {
+            image : "http://utouchdesign.com/themes/envato/escort/assets/img/company_logo_6.png",
+            header: "PART TIME",
+            subHeader: "Photoshop Designer",
+            address: "2865 Emma Street, Lubbock"
+          },
+          {
+            image : "http://utouchdesign.com/themes/envato/escort/assets/img/company_logo_7.png",
+            header: "FULL TIME",
+            subHeader: "HTML5 & CSS3 Coder",
+            address: "2719 Burnside Avenue, Logan"
+          },
+          {
+            image : "http://utouchdesign.com/themes/envato/escort/assets/img/company_logo_8.png",
+            header: "PART TIME",
+            subHeader: ".Net Developer",
+            address: "3815 Forest Drive, Alexandria"
+          }
+          ]; %>
+
+      <% featuredCardContent.forEach(element => { %>   
+        <%- include ('../../components/molecule/featured-card', element); %>
+      <% }) %>
+          
+  </div>
+  <!-- browse jobs button -->
+  <%- include('../../components/atom/btngreen', { btnText: 'BROWSE ALL JOBS' }); %>
+
+  </section>
