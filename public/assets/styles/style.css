@@ -549,6 +549,9 @@ video {
 .mb-1 {
   margin-bottom: 0.25rem;
 }
+.mb-10 {
+  margin-bottom: 2.5rem;
+}
 .mb-2 {
   margin-bottom: 0.5rem;
 }
@@ -563,6 +566,9 @@ video {
 }
 .mt-16 {
   margin-top: 4rem;
+}
+.mt-3 {
+  margin-top: 0.75rem;
 }
 .mt-6 {
   margin-top: 1.5rem;
@@ -594,6 +600,12 @@ video {
 .h-screen {
   height: 100vh;
 }
+.min-h-screen {
+  min-height: 100vh;
+}
+.w-1\/2 {
+  width: 50%;
+}
 .w-10\/12 {
   width: 83.333333%;
 }
@@ -603,8 +615,18 @@ video {
 .w-full {
   width: 100%;
 }
+.w-max {
+  width: -moz-max-content;
+  width: max-content;
+}
 .max-w-7xl {
   max-width: 80rem;
+}
+.max-w-sm {
+  max-width: 24rem;
+}
+.grid-cols-1 {
+  grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 .grid-cols-2 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -648,11 +670,29 @@ video {
   margin-top: calc(2rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(2rem * var(--tw-space-y-reverse));
 }
+.overflow-hidden {
+  overflow: hidden;
+}
 .rounded {
   border-radius: 0.25rem;
 }
+.rounded-full {
+  border-radius: 9999px;
+}
 .rounded-md {
   border-radius: 0.375rem;
+}
+.rounded-bl {
+  border-bottom-left-radius: 0.25rem;
+}
+.rounded-br {
+  border-bottom-right-radius: 0.25rem;
+}
+.rounded-tl {
+  border-top-left-radius: 0.25rem;
+}
+.rounded-tr {
+  border-top-right-radius: 0.25rem;
 }
 .border-t {
   border-top-width: 1px;
@@ -660,9 +700,21 @@ video {
 .border-gray-900\/10 {
   border-color: rgb(17 24 39 / 0.1);
 }
+.bg-blue-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(59 130 246 / var(--tw-bg-opacity));
+}
 .bg-btngreen {
   --tw-bg-opacity: 1;
   background-color: rgb(38 174 97 / var(--tw-bg-opacity));
+}
+.bg-pink-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(236 72 153 / var(--tw-bg-opacity));
+}
+.bg-red-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(239 68 68 / var(--tw-bg-opacity));
 }
 .bg-white {
   --tw-bg-opacity: 1;
@@ -671,8 +723,18 @@ video {
 .bg-opacity-20 {
   --tw-bg-opacity: 0.2;
 }
+.p-1 {
+  padding: 0.25rem;
+}
 .p-2 {
   padding: 0.5rem;
+}
+.p-4 {
+  padding: 1rem;
+}
+.px-2 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }
 .px-4 {
   padding-left: 1rem;
@@ -686,9 +748,21 @@ video {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
 }
+.px-7 {
+  padding-left: 1.75rem;
+  padding-right: 1.75rem;
+}
+.py-1 {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
 .py-2 {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
+}
+.py-20 {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
 }
 .py-3 {
   padding-top: 0.75rem;
@@ -702,6 +776,9 @@ video {
 }
 .pt-8 {
   padding-top: 2rem;
+}
+.text-center {
+  text-align: center;
 }
 .font-heebo {
   font-family: Heebo, sans-serif;
@@ -731,6 +808,10 @@ video {
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
+}
+.text-xs {
+  font-size: 0.75rem;
+  line-height: 1rem;
 }
 .font-bold {
   font-weight: 700;
@@ -797,6 +878,55 @@ main {
   padding: 3px 7px;
   background: rgba(38, 174, 97, 0.2);
 }
+.featured-jobs-card {
+  background: #fff;
+  border: 1px solid #eaeff5;
+  box-shadow: 0 4px 10px 0 rgba(41, 128, 185, 0.07) !important;
+  -webkit-box-shadow: 0 4px 10px 0 rgba(41, 128, 185, 0.07) !important;
+  border-radius: 6px;
+}
+.fulltime {
+  display: flex;
+  align-items: center;
+  font-size: 10px;
+  font-weight: 600;
+  border-radius: 4px;
+  color: #1fb650;
+  border-color: rgba(31, 182, 80, 0.12);
+  background: rgba(31, 182, 80, 0.12);
+  padding: 0 10px;
+}
+.part-time {
+  display: flex;
+  align-items: center;
+  font-size: 10px;
+  font-weight: 600;
+  border-radius: 4px;
+  color: #feb801;
+  border-color: rgba(254, 184, 1, 0.1);
+  background: rgba(254, 184, 1, 0.1);
+  padding: 0 10px;
+}
+.internship {
+  display: flex;
+  align-items: center;
+  font-size: 10px;
+  font-weight: 600;
+  border-radius: 4px;
+  color: #f21136;
+  border-color: rgba(242, 17, 54, 0.1);
+  background: rgba(242, 17, 54, 0.1);
+  padding: 0 10px;
+}
+.feauted-jobs-img {
+  width: 90px;
+  border: 2px solid rgba(0, 0, 0, 0.03);
+}
+.buttons2 {
+  border: 2px solid #26ae61;
+  font-weight: 500 !important;
+  color: #26ae61;
+}
 .hover\:tracking-wide:hover {
   letter-spacing: 0.025em;
 }
@@ -819,6 +949,11 @@ main {
   }
 }
 @media (min-width: 768px) {
+
+  .md\:mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+  }
 
   .md\:my-0 {
     margin-top: 0px;
@@ -927,6 +1062,10 @@ main {
     width: 66.666667%;
   }
 
+  .lg\:max-w-5xl {
+    max-width: 64rem;
+  }
+
   .lg\:max-w-7xl {
     max-width: 80rem;
   }
@@ -998,6 +1137,10 @@ main {
 
   .xl\:grid {
     display: grid;
+  }
+
+  .xl\:max-w-screen-xl {
+    max-width: 1280px;
   }
 
   .xl\:grid-cols-3 {

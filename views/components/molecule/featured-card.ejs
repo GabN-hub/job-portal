@@ -1,0 +1,32 @@
+<div class="featured-jobs-card p-4">
+  <!-- for job classification and heart icon -->
+  <div class="featured-jobs-header flex justify-between">
+
+<% if (["FULL TIME"].includes(header)) { %>
+    <span class="fulltime"><%= header %></span>
+<% } else if (["PART TIME"].includes(header)) { %>
+    <span class="part-time"><%= header %></span>
+<% } else { %>
+    <span class="internship"><%= header %></span>
+<% } %>
+
+
+    
+    <div class="heart-white bg-btngreen rounded-full py-1 px-2">
+      <i class="fa-solid fa-heart" style="color: #ffffff"></i>
+    </div>
+  </div>
+  <!-- contains the image, text, and button -->
+  <div class="featured-jobs-content">
+    <div class="feauted-jobs-img mx-auto rounded-full overflow-hidden">
+      <img src="<%= image %>" />
+    </div>
+    <div class="featured-jobs-text text-center mt-3">
+      <h4 class="job-title poppins font-semibold text-lg"><%= subHeader %></h4>
+      <p class="address monstreat text-sm"><%= address %></p>
+    </div>
+  </div>
+  <div class="featured-jobs-button buttons2 mx-auto w-max mb-2 rounded mt-6">
+    <button class="px-4 py-2 monstreat text-xs">APPLY NOW</button>
+  </div>
+</div>

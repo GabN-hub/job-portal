@@ -1,0 +1,74 @@
+<div class="bg-blue-500">
+  <section class="featured-jobs bg-white min-h-screen w-10/12 mx-auto py-20 lg:max-w-5xl xl:max-w-screen-xl">
+    <div class="feature-buttons buttons mb-10 py-3 px-2 flex rounded max-w-sm md:mx-auto">
+      <div class="w-1/2 py-3 px-4 bg-red-500 text-center rounded-tl rounded-bl">
+        <a class="text-white font-semibold">Latest Jobs</a>
+      </div>
+      <div class="w-1/2 py-3 px-4 bg-pink-500 text-center rounded-tr rounded-br">
+        <a class="text-white font-semibold">Recent Jobs</a>
+      </div>
+    </div>
+    <div class="featured-jobs-container grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
+      <!-- featured job card - JOB 1 -->
+          <% const featuredCardContent = [
+            {
+              image : "http://utouchdesign.com/themes/envato/escort/assets/img/company_logo_1.png",
+              header: "FULL TIME",
+              subHeader: "Product Redesign",
+              address: "2708 Scenic Way, IL 62373"
+            },
+            {
+              image : "http://utouchdesign.com/themes/envato/escort/assets/img/company_logo_1.png",
+              header: "PART TIME",
+              subHeader: "Product Redesign",
+              address: "2708 Scenic Way, IL 62373"
+            },
+            {
+              image : "http://utouchdesign.com/themes/envato/escort/assets/img/company_logo_1.png",
+              header: "INTERNSHIP",
+              subHeader: "Product Redesign",
+              address: "2708 Scenic Way, IL 62373"
+            },
+            {
+              image : "http://utouchdesign.com/themes/envato/escort/assets/img/company_logo_1.png",
+              header: "FULL TIME",
+              subHeader: "Product Redesign",
+              address: "2708 Scenic Way, IL 62373"
+            },
+            {
+             image : "http://utouchdesign.com/themes/envato/escort/assets/img/company_logo_1.png",
+            header: "FULL TIME",
+              subHeader: "Product Redesign",
+              address: "2708 Scenic Way, IL 62373"
+            },
+            {
+               image : "http://utouchdesign.com/themes/envato/escort/assets/img/company_logo_1.png",
+              header: "FULL TIME",
+              subHeader: "Product Redesign",
+              address: "2708 Scenic Way, IL 62373"
+            },
+            {
+               image : "http://utouchdesign.com/themes/envato/escort/assets/img/company_logo_1.png",
+              header: "FULL TIME",
+              subHeader: "Product Redesign",
+              address: "2708 Scenic Way, IL 62373"
+            },
+            {
+               image : "http://utouchdesign.com/themes/envato/escort/assets/img/company_logo_1.png",
+              header: "FULL TIME",
+              subHeader: "Product Redesign",
+              address: "2708 Scenic Way, IL 62373"
+            }
+            ]; %>
+
+<% featuredCardContent.forEach(element => { %>
+ <%- include ('../../components/molecule/featured-card', element); %>
+<% }) %>
+            
+    </div>
+    <!-- browse jobs button -->
+    <div class="mx-auto mt-10 w-max bg-btngreen rounded py-3 px-7">
+      <p class="font-montserrat text-white">BROWSE ALL JOBS</p>
+    </div>
+  </section>
+</div>

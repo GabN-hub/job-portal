@@ -21,3 +21,52 @@ main {
   padding: 3px 7px;
   background: rgba(38, 174, 97, 0.2);
 }
+.featured-jobs-card {
+  background: #fff;
+  border: 1px solid #eaeff5;
+  box-shadow: 0 4px 10px 0 rgba(41, 128, 185, 0.07) !important;
+  -webkit-box-shadow: 0 4px 10px 0 rgba(41, 128, 185, 0.07) !important;
+  border-radius: 6px;
+}
+.fulltime {
+  display: flex;
+  align-items: center;
+  font-size: 10px;
+  font-weight: 600;
+  border-radius: 4px;
+  color: #1fb650;
+  border-color: rgba(31, 182, 80, 0.12);
+  background: rgba(31, 182, 80, 0.12);
+  padding: 0 10px;
+}
+.part-time {
+  display: flex;
+  align-items: center;
+  font-size: 10px;
+  font-weight: 600;
+  border-radius: 4px;
+  color: #feb801;
+  border-color: rgba(254, 184, 1, 0.1);
+  background: rgba(254, 184, 1, 0.1);
+  padding: 0 10px;
+}
+.internship {
+  display: flex;
+  align-items: center;
+  font-size: 10px;
+  font-weight: 600;
+  border-radius: 4px;
+  color: #f21136;
+  border-color: rgba(242, 17, 54, 0.1);
+  background: rgba(242, 17, 54, 0.1);
+  padding: 0 10px;
+}
+.feauted-jobs-img {
+  width: 90px;
+  border: 2px solid rgba(0, 0, 0, 0.03);
+}
+.buttons2 {
+  border: 2px solid #26ae61;
+  font-weight: 500 !important;
+  color: #26ae61;
+}
