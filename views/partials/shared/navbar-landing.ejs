@@ -29,3 +29,27 @@
 </nav>
 
 <!-- saan ilalagay javascript for this -->
+<script>
+  const nav = document.querySelector("nav");
+  const h2Logo = document.querySelector("h2.business-name");
+  const homeLink = document.querySelector("a.monstreat");
+  const otherLinks = document.querySelectorAll(".nav-pages a:not(home)");
+
+  const threshold = 0.2;
+
+  window.addEventListener("scroll", () => {
+    const scrollY = window.scrollY || window.pageYOffset;
+
+    if (scrollY >= threshold * window.innerHeight) {
+      nav.style.backgroundColor = "white";
+      h2Logo.style.color = "black";
+      homeLink.style.color = "#24d671";
+      otherLinks.forEach((link) => (link.style.color = "#6b797c"));
+    } else {
+      nav.style.backgroundColor = "";
+      h2Logo.style.color = "";
+      homeLink.style.color = "";
+      otherLinks.forEach((link) => (link.style.color = ""));
+    }
+  });
+</script>

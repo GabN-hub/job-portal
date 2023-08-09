@@ -9,3 +9,15 @@ footer {
   background: url(../../assets/images/footer-bg.png) no-repeat bottom center;
   background-size: contain;
 }
+
+/* landing page - hero section style */
+main {
+  background: linear-gradient(to right, rgba(50, 50, 50, 1) 20%, rgba(50, 50, 50, 0.95) 50%, rgba(50, 50, 50, 0.1) 80%, rgba(50, 50, 50, 0) 100%), url(../../assets/images/hero-img.jpg) no-repeat center / cover;
+}
+/* REUSABLE - green highlight */
+.green-highlight {
+  color: #24d671;
+  border-radius: 4px;
+  padding: 3px 7px;
+  background: rgba(38, 174, 97, 0.2);
+}
