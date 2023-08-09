@@ -6,10 +6,32 @@
     <title>Job Portal</title>
     <link rel="stylesheet" href="./assets/styles/style.css" />
     <script src="https://kit.fontawesome.com/bafe0bdc31.js" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
   </head>
   <body>
     <%- include('../partials/shared/navbar'); %>
     <main><%- body %></main>
     <%- include('../partials/shared/footer'); %>
+
+
+
+
+
+    <script>
+      
+        const dropDownElement = document.getElementById("dropDown");
+        const contentElement = document.querySelector("ul");
+    
+  
+        dropDownElement.addEventListener("click", function() {
+       
+          if (contentElement.style.display === "none" || contentElement.style.display === "") {
+            contentElement.style.display = "block";
+          } else {
+            contentElement.style.display = "none";
+          }
+        });
+    </script>
+
   </body>
 </html>

@@ -2,3 +2,69 @@
 @tailwind components;
 @tailwind utilities;
 @import url("https://fonts.googleapis.com/css2?family=Heebo&family=Montserrat&family=Poppins&display=swap");
+
+* {
+  font-family: "Montserrat", sans-serif;
+}
+/* footer bg style */
+footer {
+  position: relative;
+  background: url(../../assets/images/footer-bg.png) no-repeat bottom center;
+  background-size: contain;
+}
+
+/* landing page - hero section style */
+.hero-bg {
+  background: linear-gradient(to right, rgba(50, 50, 50, 1) 20%, rgba(50, 50, 50, 0.95) 50%, rgba(50, 50, 50, 0.1) 80%, rgba(50, 50, 50, 0) 100%), url(../../assets/images/hero-img.jpg) no-repeat center / cover;
+}
+/* REUSABLE - green highlight */
+.green-highlight {
+  color: #24d671;
+  border-radius: 4px;
+  padding: 3px 7px;
+  background: rgba(38, 174, 97, 0.2);
+}
+.featured-jobs-card {
+  background: #fff;
+  border: 1px solid #eaeff5;
+  box-shadow: 0 4px 10px 0 rgba(41, 128, 185, 0.07) !important;
+  -webkit-box-shadow: 0 4px 10px 0 rgba(41, 128, 185, 0.07) !important;
+  border-radius: 6px;
+}
+.font10 {
+  font-size: 10px;
+}
+.fulltime {
+  color: #1fb650;
+  border-color: rgba(31, 182, 80, 0.12);
+  background: rgba(31, 182, 80, 0.12);
+}
+.part-time {
+  color: #feb801;
+  border-color: rgba(254, 184, 1, 0.1);
+  background: rgba(254, 184, 1, 0.1);
+}
+.internship {
+  color: #f21136;
+  border-color: rgba(242, 17, 54, 0.1);
+  background: rgba(242, 17, 54, 0.1);
+}
+.feauted-jobs-img {
+  width: 90px;
+  border: 2px solid rgba(0, 0, 0, 0.03);
+}
+.buttons2 {
+  border: 2px solid #26ae61;
+  font-weight: 500 !important;
+  color: #26ae61;
+}
+/* job categories section */
+.job-categories-card {
+  background: #fff;
+  box-shadow: 0 5px 25px 0 rgba(41, 128, 185, 0.15);
+  -webkit-box-shadow: 0 5px 25px 0 rgba(41, 128, 185, 0.15);
+}
+.category-job {
+  color: #26ae61;
+  background: rgba(38, 174, 97, 0.1);
+}

@@ -4,7 +4,6 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        montserrat: ["Montserrat", "sans-serif"],
         poppins: ["Poppins", "sans-serif"],
         heebo: ["Heebo", "sans-serif"],
       },
@@ -13,6 +12,10 @@ module.exports = {
         description: "#707f8c",
         address: "#8492af",
         btngreen: "#26ae61",
+        grayBg: "#f8fafb",
+        content: "#707F8C",
+        header: "#334e6f",
+        categories: "#5a6773"
       },
     },
   },
