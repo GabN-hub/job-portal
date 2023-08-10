@@ -75,3 +75,9 @@ footer {
 .newsletter {
   background: #26ae61 url(../../assets/images/newsletter-bg.png) center/cover;
 }
+
+/* banner */
+.banner-bg {
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../../assets/images/banner.png) center top / cover;
+  position: relative;
+}
