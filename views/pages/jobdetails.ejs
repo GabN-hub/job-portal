@@ -1,30 +1,5 @@
-
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tailwind</title>
-    <meta name="author" content="David Grzyb">
-    <meta name="description" content="">
-
-    <!-- Tailwind -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
-    <style>
-        @import url('https://fonts.googleapis.com/css?family=Karla:400,700&display=swap');
-
-        .font-family-karla {
-            font-family: karla;
-        }
-    </style>
-
-    <!-- Font Awesome -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js" integrity="sha256-KzZiKy0DWYsnwMF+X1DvQngQ2/FxF7MF3Ff72XcpuPs=" crossorigin="anonymous"></script>
-</head>
-<body class="bg-white font-family-karla">
-<!-- Job detail -->
-
+<!-- Banner -->
+<%- include('../partials/shared/banner'); %>
 
   <div class="container mx-auto flex flex-wrap py-6 padd-top80 padd-bot60">
     <!-- Post Section -->
@@ -41,7 +16,7 @@
             <button type="button" data-toggle="modal" data-target="#signin" class="btn-job theme-btn job-apply">Apply Now</button>
             </div>
           </div>
-          <div class="col-md-8 user_job_detail text-center">
+          <div class="col-md-8 user_job_detail">
             <div class="col-sm-12 mrg-bot-10"> 20K To 50K/Month </div>
             <div class="col-sm-12 mrg-bot-10"> 91 234 567 8765 </div>
             <div class="col-sm-12 mrg-bot-10"> mail@example.com </div>
@@ -80,9 +55,7 @@
             <div class="detail-wrapper-header">
               <h4>Location</h4>
             </div>
-            <div class="detail-wrapper-body">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3430.566512514854!2d76.8192921147794!3d30.702470481647698!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390fecca1d6c0001%3A0xe4953728a502a8e2!2sChandigarh!5e0!3m2!1sen!2sin!4v1520136168627" width="100%" height="320" frameborder="0" style="border:0" allowfullscreen></iframe>
-            </div>
+            <%- include('../partials/jobdetails/maps'); %>
           </div>
           <div class="detail-wrapper">
             <div class="detail-wrapper-header">
@@ -111,7 +84,7 @@
             <!-- Start: Job Overview -->
             <div class="widget-boxed">
               <div class="widget-boxed-header">
-                <h4><i class="ti-location-pin padd-r-10"></i>Location</h4>
+                <h4><img src="public\assets\images\pin.PNG"><i class="ti-location-pin padd-r-10"></i>Location</h4>
               </div>
               <div class="widget-boxed-body">
                 <div class="side-list no-border">
@@ -153,13 +126,8 @@
               <div class="widget-boxed-header">
                 <h4><i class="ti-time padd-r-10"></i>Location</h4>
               </div>
-              <div class="widget-boxed-body">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3430.566512514854!2d76.8192921147794!3d30.702470481647698!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390fecca1d6c0001%3A0xe4953728a502a8e2!2sChandigarh!5e0!3m2!1sen!2sin!4v1520136168627" width="100%" height="360" frameborder="0" style="border:0" allowfullscreen></iframe>
-              </div>
+              <%- include('../partials/jobdetails/maps'); %>
             </div>
           </div>
         </div>
     </div>
-
-</body>
-</html>
