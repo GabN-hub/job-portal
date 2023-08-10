@@ -14,5 +14,9 @@ app.get("/", function (req, res) {
   res.render("pages/index");
 });
 
+app.get("/joblist", function (req, res) {
+  res.render("pages/joblist");
+});
+
 app.listen(3000);
 console.log("Server is running");

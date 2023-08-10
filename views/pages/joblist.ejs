@@ -1,0 +1,208 @@
+ <div class="mt-20">
+ <%- include('../partials/shared/banner'); %>
+</div>  
+
+    <!-- Parent Div -->
+   
+    <div class="flex flex-col justify-center lg:flex-row overflow-hidden">
+      <!-- Left Side Parent Div-->
+      <div class="lg:p-10 flex flex-col gap-6 items-center">
+        <!-- Search Keywords & All location -->
+        <div class="bg-white shadow-md flex flex-col gap-3 border p-5 rounded lg:w-full items-center w-9/12">
+          <div>
+            <input
+              class="border px-10 py-2 rounded"
+              type="text"
+              placeholder="Search Keywords"
+            />
+          </div>
+          <div>
+            <input
+              class="border px-10 py-2 rounded"
+              type="text"
+              placeholder="All Locations"
+            />
+          </div>
+        </div>
+
+        <!-- Left Side-option -->
+
+          <% const sideOptions = [
+          {
+            sectionHeader: "Offered Salary",
+            sectionArray: [
+            { label: 'Under - $10,000', value: "102" },
+            { label: '$10,000 - $15,000', value: "78" },
+            { label: '$15,000 - $20,000', value: "12" },
+            { label: '$20,000 - $25,000', value: "85" },
+            { label: '$20,000 - $25,000', value: "307" }
+            ],
+          },
+          {
+            sectionHeader: "Job Type",
+            sectionArray: [
+            { label: 'Full Time', value: "102" },
+            { label: 'Part Time', value: "78" },
+            { label: 'Internship', value: "12" },
+            { label: 'Freelancer', value: "85" },
+            { label: 'Contract Base', value: "307" }
+
+            ],
+          },
+          {
+            sectionHeader: "Designation",
+            sectionArray: [
+            { label: 'Web Designer', value: "102" },
+            { label: 'Php Developer', value: "78" },
+            { label: 'Human Resource', value: "12" },
+            { label: 'Project Manager', value: "85" },
+            { label: 'App Developer', value: "307" },
+            { label: 'CMS Developer', value: "85" }
+            ],
+          },
+          {
+            sectionHeader: "Experience",
+            sectionArray: [
+            { label: '1Year To 2Year', value: "" },
+            { label: '2Year To 3Year', value: "" },
+            { label: '3Year To 4Year', value: "" },
+            { label: '4Year To 5Year', value: "" },
+            { label: '5Year To 7Year', value: "" },
+            { label: '7Year To 10Year', value: "" }
+            ],
+          },
+          {
+            sectionHeader: "Qualification",
+            sectionArray: [
+            { label: 'High School', value: "" },
+            { label: 'Intermediate', value: "" },
+            { label: 'Graduation', value: "" },
+            { label: 'Master Degree', value: "" }
+            ],
+          }
+
+          ]; %>
+          <% sideOptions.forEach(option => { %>
+          <%- include("../partials/joblisting/side-option", option) %>
+          <% }) %>
+       
+
+        <!-- End of Left Side Parent Div -->
+      </div>
+
+      <!-- Right Side Parent Div -->
+      <div class="p-12 flex flex-col gap-7">
+        <!-- Parent Div Job & Input -->
+        <div class="mb-3 flex flex-col flex-wrap justify-center items-center lg:flex-row lg:justify-between">
+        
+            <h1 class="text-xl text-header font-poppins font-semibold">98 Jobs & Vacancies</h1>
+          
+          <div class="flex mt-5 flex-col items-center gap-3 lg:flex-row lg-item  lg:ml-60">
+            <span class="text-base font-poppins text-header">Short By</span>
+
+            <input
+              class="border px-1 py-1 rounded"
+              type="text"
+              placeholder="Most Recent"
+            />
+            <input
+              class="border px-1 py-1 rounded"
+              type="text"
+              placeholder="10 Per Page"
+            />
+          </div>
+          <!--End of Parent Div Job & Most Recent Input -->
+        </div>
+
+      <!-- Right Side-Option -->
+
+            <% const rightOptions = [
+            {
+              image : "http://utouchdesign.com/themes/envato/escort/assets/img/company_logo_1.png",
+              sectionHeader: "Apple LTD",
+              sectionSubHeader: "Software Development",
+              sectionArray: [
+              { label: 'Job Id:', value: "G58726" },
+              { label: 'Job Type:', value: "Full Time" },
+              { label: 'Skills:', value: "HTML, CSS, Java, Php" },
+              { label: 'Experience:', value: "3 Years" },
+              { label: 'Location:', value: "2844 Counts Lane, KY 45241" }
+              ],
+            },
+            {
+              image : "http://utouchdesign.com/themes/envato/escort/assets/img/company_logo_2.png",
+              sectionHeader: "Google LTD",
+              sectionSubHeader: "Software Development",
+              sectionArray: [
+              { label: 'Job Id:', value: "G58726" },
+              { label: 'Job Type:', value: "Full Time" },
+              { label: 'Skills:', value: "HTML, CSS, Java, Php" },
+              { label: 'Experience:', value: "3 Years" },
+              { label: 'Location:', value: "2844 Counts Lane, KY 45241" }
+              ],
+            },
+            {
+              image : "http://utouchdesign.com/themes/envato/escort/assets/img/company_logo_3.png",
+              sectionHeader: "Laxol LTD",
+              sectionSubHeader: "Software Development",
+              sectionArray: [
+              { label: 'Job Id:', value: "G58726" },
+              { label: 'Job Type:', value: "Full Time" },
+              { label: 'Skills:', value: "HTML, CSS, Java, Php" },
+              { label: 'Experience:', value: "3 Years" },
+              { label: 'Location:', value: "2844 Counts Lane, KY 45241" }
+              ],
+            },
+            {
+              image : "http://utouchdesign.com/themes/envato/escort/assets/img/company_logo_4.png",
+              sectionHeader: "Sirix LTD",
+              sectionSubHeader: "Software Development",
+              sectionArray: [
+              { label: 'Job Id:', value: "G58726" },
+              { label: 'Job Type:', value: "Full Time" },
+              { label: 'Skills:', value: "HTML, CSS, Java, Php" },
+              { label: 'Experience:', value: "3 Years" },
+              { label: 'Location:', value: "2844 Counts Lane, KY 45241" }
+              ],
+            },
+            {
+              image : "http://utouchdesign.com/themes/envato/escort/assets/img/company_logo_5.png",
+              sectionHeader: "Indico LTD",
+              sectionSubHeader: "Software Development",
+              sectionArray: [
+              { label: 'Job Id:', value: "G58726" },
+              { label: 'Job Type:', value: "Full Time" },
+              { label: 'Skills:', value: "HTML, CSS, Java, Php" },
+              { label: 'Experience:', value: "3 Years" },
+              { label: 'Location:', value: "2844 Counts Lane, KY 45241" }
+              ],
+            }
+            ]; %>
+            
+            <% rightOptions.forEach(option => { %>
+            <%- include("../partials/joblisting/right-option", option) %>
+            <% }) %>
+
+            <!-- Added new -->
+
+            <div class="flex justify-center p-5">
+              <div class="pagination">
+                <a class="border px-4 py-3 rounded-full hover:bg-green-500" href="#">&laquo;</a>
+                <a class="border px-4 py-3 rounded-full hover:bg-green-500" href="#">1</a>
+                <a class="border px-4 py-3 rounded-full hover:bg-green-500" href="#">2</a>
+                <a class="border px-4 py-3 rounded-full hover:bg-green-500" href="#">3</a>
+                <a class="border px-4 py-3 rounded-full hover:bg-green-500" href="#">&raquo;</a>
+              </div>
+            </div>
+
+        <!-- End of Right Side Parent Div -->                                     
+      </div>
+    
+      <!-- End of Parent Div -->
+    </div>
+
+    <%- include("../partials/shared/newsletter.ejs") %>
+
+
+
+

@@ -1,0 +1,21 @@
+<div class="bg-white rounded px-4 py-3 border shadow-md w-9/12 lg:w-full">
+  <div class="border-b-2 flex justify-between items-center p-2">
+    <h4 class="p-2 text-lg text-header font-poppins font-semibold"><%= sectionHeader %></h4>
+
+  <% if (['Qualification', 'Experience', 'Designation'].includes(sectionHeader)) { %>
+    <div class="rounded-full px-2 bg-green-500 cursor-pointer"
+    id="dropDown">
+      <i class="fa-light fa-plus text-3xl text-white disable-font"></i>
+    </div>
+    <% } %>
+  </div>
+        
+  <ul class="flex flex-col gap-2">
+  <% sectionArray.forEach((array) => { %>
+  <%- include("../../components/molecules/salary-section", array) %>
+  <% }) %>
+  </ul>
+
+</div>
+
+
