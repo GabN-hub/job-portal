@@ -14,5 +14,10 @@ app.get("/", function (req, res) {
   res.render("pages/index");
 });
 
+app.get("/jobdetails", function (req, res) {
+  res.render("pages/jobdetails");
+});
+
 app.listen(3000);
 console.log("Server is running");
+
