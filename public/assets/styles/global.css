@@ -58,13 +58,20 @@ footer {
   font-weight: 500 !important;
   color: #26ae61;
 }
-/* job categories section */
+
+/* -- job categories section -- */
 .job-categories-card {
   background: #fff;
   box-shadow: 0 5px 25px 0 rgba(41, 128, 185, 0.15);
   -webkit-box-shadow: 0 5px 25px 0 rgba(41, 128, 185, 0.15);
 }
-.category-job {
+.category-job,
+.email-icon {
   color: #26ae61;
   background: rgba(38, 174, 97, 0.1);
+}
+
+/* -- newsletter section -- */
+.newsletter {
+  background: #26ae61 url(../../assets/images/newsletter-bg.png) center/cover;
 }
