@@ -1,9 +1,7 @@
- <div class="mt-20">
- <%- include('../partials/shared/banner'); %>
-</div>  
-
+  <div class="mt-20">
+  <%- include('../partials/shared/banner', {header: "Browse Job"}); %>
+  </div>
     <!-- Parent Div -->
-   
     <div class="flex flex-col justify-center lg:flex-row overflow-hidden">
       <!-- Left Side Parent Div-->
       <div class="lg:p-10 flex flex-col gap-6 items-center">
@@ -185,23 +183,15 @@
 
             <!-- Added new -->
 
-            <div class="flex justify-center p-5">
-              <div class="pagination">
-                <a class="border px-4 py-3 rounded-full hover:bg-green-500" href="#">&laquo;</a>
-                <a class="border px-4 py-3 rounded-full hover:bg-green-500" href="#">1</a>
-                <a class="border px-4 py-3 rounded-full hover:bg-green-500" href="#">2</a>
-                <a class="border px-4 py-3 rounded-full hover:bg-green-500" href="#">3</a>
-                <a class="border px-4 py-3 rounded-full hover:bg-green-500" href="#">&raquo;</a>
-              </div>
-            </div>
+            <%- include('../components/atom/pagination'); %>
 
         <!-- End of Right Side Parent Div -->                                     
       </div>
-    
+
+       
+
       <!-- End of Parent Div -->
     </div>
-
-    <%- include("../partials/shared/newsletter.ejs") %>
 
 
 
