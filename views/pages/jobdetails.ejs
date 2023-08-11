@@ -1,11 +1,12 @@
 <div class="mt-20"><%- include('../partials/shared/banner', {header : "Job Details"}); %></div>
 
+<!-- main container is used to set the max-width -->
 <div class="main-container bg-pink-200 w-10/12 mx-auto py-20 lg:max-w-5xl xl:max-w-screen-xl">
-  <div class="row-elements flex flex-col gap-8 lg:flex-row">
-    <div class="first-container bg-blue-200 w-full">
+  <div class="row-elements gap-8 grid grid-cols-1 lg:grid-cols-3">
+    <div class="first-container w-full lg:col-span-2">
       <div class="featured-jobs-card p-4 bg-white">
         <div class="flex flex-col lg:flex-row">
-          <div class="featured-jobs-content border-b lg:w-1/2 border-blue-600 lg:border-r lg:border-b-0">
+          <div class="featured-jobs-content border-b lg:w-2/6 border-blue-600 lg:border-r lg:border-b-0">
             <div class="feauted-jobs-img mx-auto rounded-full overflow-hidden">
               <img src="http://utouchdesign.com/themes/envato/escort/assets/img/company_logo_1.png" alt="featued jobs image" class="p-1 rounded-full" />
             </div>
@@ -13,7 +14,7 @@
               <h4 class="job-title poppins font-semibold text-lg">Web Designer</h4>
               <p class="address monstreat text-sm">2708 Scenic Way, IL 62373</p>
             </div>
-            <div class="featured-jobs-button buttons2 mx-auto w-max mb-2 rounded mt-6">
+            <div class="featured-jobs-button buttons2 mx-auto w-max my-4 rounded mt-6">
               <button class="px-4 py-2 monstreat text-xs">APPLY NOW</button>
             </div>
           </div>
@@ -23,8 +24,35 @@
           </div>
         </div>
       </div>
+      <!-- eto yung mga job description -->
+      <div class="second-container border border-green-500 rounded-md mt-8 w-full lg:col-span-2">
+        <div class="header">
+          <h3 class="p-6 bg-gray-500 rounded-md text-white">Job Description</h3>
+        </div>
+        <div class="content p-6">
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium facere nulla nam incidunt commodi ratione, vitae quisquam quos ut et?</p>
+          <p class="mt-4">lorem 20</p>
+        </div>
+      </div>
     </div>
-    <div class="second-container w-full h-36 bg-orange-200 lg:w-2/6"></div>
+
+    <!-- eto yung may green na icon-->
+    <div class="second-container h-fit w-full bg-orange-200 px-4">
+      <div class="header flex items-center gap-3 border-b border-blue-500 py-4">
+        <div class="bg-btngreen w-9 h-9 rounded-full flex items-center justify-center">
+          <i class="fa-solid fa-pen-nib"></i>
+        </div>
+        <h3>Location</h3>
+      </div>
+      <div class="px-4">
+        <p class="pb-2"><i class="fa-solid fa-pen-nib"></i> 20k to 50</p>
+        <p class="pb-2"><i class="fa-solid fa-pen-nib"></i> 20k to 50</p>
+        <p class="pb-2"><i class="fa-solid fa-pen-nib"></i> 20k to 50</p>
+        <p class="pb-2"><i class="fa-solid fa-pen-nib"></i> 20k to 50</p>
+        <p class="pb-2"><i class="fa-solid fa-pen-nib"></i> 20k to 50</p>
+        <p class="pb-2"><i class="fa-solid fa-pen-nib"></i> 20k to 50</p>
+      </div>
+    </div>
   </div>
 
   <%- include('../partials/shared/newsletter'); %>
