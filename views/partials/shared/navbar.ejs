@@ -2,7 +2,7 @@
 <nav class="bg-white w-full fixed top-0 z-50 py-2">
   <!-- this container is to set the max width -->
   <div class="nav-container h-full w-10/12 flex items-center justify-between mx-auto lg:max-w-7xl">
-    <div class="nav-logo flex items-center gap-2">
+    <div class="nav-logo flex items-center justify-between gap-2">
       <%- include('../../components/molecule/logo-name'); %>
       <!-- hidden on smaller screens. Links show on lg and larger screens -->
       <div class="nav-pages hidden lg:flex lg:items-center lg:gap-2 lg:ml-5 xl:gap-5">
@@ -12,6 +12,9 @@
         <a href="" class="text-title font-semibold">Page4</a>
       </div>
     </div>
+    <div class="lg:hidden">
+    <i class="fa-solid fa-bars "></i>
+   </div>
     <!-- hidden on smaller screens. Buttons show on lg and larger screens  -->
     <div class="nav-buttons hidden lg:flex lg:items-center lg:gap-2">
       <div class="bg-btngreen flex items-center gap-3 py-2 px-4 rounded-md hover:bg-green-700 duration-500 ease-in-out">

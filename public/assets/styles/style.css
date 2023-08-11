@@ -1317,6 +1317,10 @@ footer {
     display: flex;
   }
 
+  .lg\:hidden {
+    display: none;
+  }
+
   .lg\:w-8\/12 {
     width: 66.666667%;
   }
