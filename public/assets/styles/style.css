@@ -546,6 +546,10 @@ video {
   margin-top: 0.75rem;
   margin-bottom: 0.75rem;
 }
+.my-5 {
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+}
 .mb-1 {
   margin-bottom: 0.25rem;
 }
@@ -826,6 +830,10 @@ video {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
+.bg-yellow-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(234 179 8 / var(--tw-bg-opacity));
+}
 .bg-opacity-20 {
   --tw-bg-opacity: 0.2;
 }
@@ -906,6 +914,9 @@ video {
 .py-8 {
   padding-top: 2rem;
   padding-bottom: 2rem;
+}
+.pb-20 {
+  padding-bottom: 5rem;
 }
 .pb-8 {
   padding-bottom: 2rem;
@@ -1133,43 +1144,21 @@ footer {
 
 /*pading*/
 
-html body .padd-top-60 {
-	padding-top: 60px;
-}
-html body .padd-top-80 {
-	padding-top: 80px;
-}
 html body .padd-r-10 {
 	padding-right: 15px;
 }
 
 /*job details div*/
 
-.sm\:mx-auto{
-  margin-left: auto;
-  margin-right: auto;
-}
 .detail-wrapper {
-	width: 100%;
 	display: table;
-	border-radius: 6px;
-	margin-bottom: 40px;
 	border: 1px solid #eaeff5;
-}
-.detail-wrapper-body {
-	padding: 1.5em 1em 1.5em 1.5em;
 }
 .detail-wrapper-header {
 	background:#424242;
 	border-radius: 6px 6px 0 0;
 	padding:20px 25px;
 	border-bottom: 1px solid #eaeff5;
-}
-.detail-list {
-	margin: 0 0 20px 0;
-	padding: 0;
-	display: inline-block;
-	width: 100%;
 }
 
 /*sidebar*/
