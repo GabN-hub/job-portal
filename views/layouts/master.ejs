@@ -13,29 +13,25 @@
   </head>
   <body>
     
-    <%- include('../partials/shared/navbar'); %>
+
+    
+    <%- include('../partials/shared/navbar-landing'); %>
     <main><%- body %></main>
     <%- include('../partials/shared/footer'); %>
 
 
-
-
-
-    <!-- <script>
-      
-        const dropDownElement = document.getElementById("dropDown");
-        const contentElement = document.querySelector("ul");
-
-  
-        dropDownElement.addEventListener("click", function() {
-       
-          if (contentElement.style.display === "none" || contentElement.style.display === "") {
-            contentElement.style.display = "block";
-          } else {
-            contentElement.style.display = "none";
-          }
-        });
-    </script> -->
+    <script>
+      const dropDownElement = document.getElementById("dropDownDesignation");
+      const contentElement = document.getElementById("contentDesignation");
+    
+      dropDownElement.addEventListener("click", function() {
+        if (contentElement.hasAttribute("hidden")) {
+          contentElement.removeAttribute("hidden");
+        } else {
+          contentElement.setAttribute("hidden", "true");
+        }
+      });
+    </script>
 
   </body>
 </html>
