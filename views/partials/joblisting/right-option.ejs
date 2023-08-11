@@ -1,0 +1,47 @@
+ <!-- Parent Div of Apple LTD-->
+ <div class="flex flex-col border shadow-md rounded p-5 w-full">
+  <div
+    class="flex flex-row justify-between border-b-2 items-center p-2"
+  >
+    <div class="flex flex-row items-center gap-5">
+      <div class="feauted-jobs-img mx-auto rounded-full overflow-hidden hover:scale-110 hover:cursor-pointer duration-500 ease-in-out">
+        <img
+          class="p-1 rounded-full"
+          src="<%= image %>"
+          alt=""
+        />
+      </div>
+      <div class="flex flex-col">
+        <span class="text-header font-poppins font-semibold text-xl"><%= sectionHeader %></span>
+        <span class="text-content font-medium"><%= sectionSubHeader %></span>
+      </div>
+    </div>
+    <div class="flex flex-row items-center gap-1">
+      <div>No.</div>
+      <div class="px-3 py-1 rounded-full bg-green-500 text-white">2</div>
+    </div>
+  </div>
+  <!-- Information -->
+  <div class="flex flex-row justify-between items-center p-2 flex-wrap">
+    <div class="flex flex-col gap-2 sm:mb-5">
+      <% sectionArray.forEach((array) => { %>
+      <%- include("../../components/molecule/job-section", array) %>
+      <% }) %>
+    </div>
+
+    <div class="flex p-3 flex-row justify-center items-center gap-2 lg:flex-col ">
+      <div
+        class="bg-green-500 text-white font-bold py-2 px-4 rounded text-center"
+      >
+        <button>Apply Now</button>
+      </div>
+      <div
+        class="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-6 rounded text-center"
+      >
+        <button>View Job</button>
+      </div>
+    </div>
+  </div>
+
+  <!--End of Parent Div of Apple LTD-->
+</div>
