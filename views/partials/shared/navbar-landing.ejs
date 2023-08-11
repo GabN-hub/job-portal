@@ -1,6 +1,6 @@
 <!-- // NAVBAR FOR LANDING PAGE ONLY -->
 <!-- navbar turns transparent when it reached lg, added transition on lg breakpoint using tailwind-->
-<nav class="bg-white w-full fixed top-0 z-50 py-2 lg:bg-transparent lg:transition lg:duration-1000 lg:ease-in-out">
+<nav class="bg-white w-full fixed top-0 z-50 py-2  <%= title === 'landing' ? 'lg:bg-transparent lg:transition lg:duration-1000 lg:ease-in-out' : ' ' %>">
   <!-- this container is to set the max width -->
   <div class="nav-container h-full w-10/12 flex items-center justify-between mx-auto lg:max-w-7xl lg:text-white">
     <div class="nav-logo flex items-center gap-2">
@@ -27,28 +27,4 @@
   </div>
 </nav>
 
-<!-- saan ilalagay javascript for this -->
-<script>
-  const nav = document.querySelector("nav");
-  const h2Logo = document.querySelector("h2.business-name");
-  const homeLink = document.querySelector("a.monstreat");
-  const otherLinks = document.querySelectorAll(".nav-pages a:not(home)");
 
-  const threshold = 0.2;
-
-  window.addEventListener("scroll", () => {
-    const scrollY = window.scrollY || window.pageYOffset;
-
-    if (scrollY >= threshold * window.innerHeight) {
-      nav.style.backgroundColor = "white";
-      h2Logo.style.color = "black";
-      homeLink.style.color = "#24d671";
-      otherLinks.forEach((link) => (link.style.color = "#6b797c"));
-    } else {
-      nav.style.backgroundColor = "";
-      h2Logo.style.color = "";
-      homeLink.style.color = "";
-      otherLinks.forEach((link) => (link.style.color = ""));
-    }
-  });
-</script>

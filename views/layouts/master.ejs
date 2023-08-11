@@ -21,17 +21,42 @@
 
 
     <script>
-      const dropDownElement = document.getElementById("dropDownDesignation");
-      const contentElement = document.getElementById("contentDesignation");
+      const dropDownDestination = document.getElementById("dropDownDesignation");
+      const contentDestination = document.getElementById("contentDesignation");
     
-      dropDownElement.addEventListener("click", function() {
-        if (contentElement.hasAttribute("hidden")) {
-          contentElement.removeAttribute("hidden");
+      dropDownDestination.addEventListener("click", function() {
+        if (contentDestination.hasAttribute("hidden")) {
+          contentDestination.removeAttribute("hidden");
         } else {
-          contentElement.setAttribute("hidden", "true");
+          contentDestination.setAttribute("hidden", "true");
+        }
+      });
+    
+      const dropDownQualification = document.getElementById("dropDownQualification");
+      const contentQualification = document.getElementById("contentQualification");
+    
+      dropDownQualification.addEventListener("click", function() {
+        if (contentQualification.hasAttribute("hidden")) {
+          contentQualification.removeAttribute("hidden");
+        } else {
+          contentQualification.setAttribute("hidden", "true");
+        }
+      });
+    
+      const dropDownExperience = document.getElementById("dropDownExperience");
+      const contentExperience = document.getElementById("contentExperience");
+    
+      dropDownExperience.addEventListener("click", function() {
+        if (contentExperience.hasAttribute("hidden")) {
+          contentExperience.removeAttribute("hidden");
+        } else {
+          contentExperience.setAttribute("hidden", "true");
         }
       });
     </script>
 
+
+
   </body>
 </html>
+  
