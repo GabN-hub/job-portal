@@ -830,10 +830,6 @@ video {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
-.bg-yellow-500 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(234 179 8 / var(--tw-bg-opacity));
-}
 .bg-opacity-20 {
   --tw-bg-opacity: 0.2;
 }
@@ -1176,9 +1172,9 @@ html body .padd-r-10 {
   -webkit-box-shadow: 0 4px 10px 0 rgba(41,128,185,0.07);
 }
 .widget-boxed-header {
-	padding:0 0 15px 0;
+	/* padding:0 0 15px 0; */
 	border-bottom: 1px solid #eaeff5;
-	margin-bottom:10px;
+	/* margin-bottom:10px; */
 }
 
 .side-list ul li {
