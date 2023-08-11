@@ -1,0 +1,71 @@
+<div class="mt-20">
+    <%- include('../partials/shared/banner', {header : "Candidate"}); %>
+</div>
+
+
+<section class="featured-jobs bg-white min-h-screen w-10/12 mx-auto py-20 lg:max-w-5xl xl:max-w-screen-xl">
+   
+
+  
+    <div class="featured-jobs-container grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
+      <!-- featured job card -->
+          <% const featuredCardContent = [
+            {
+              image : "http://utouchdesign.com/themes/envato/escort/assets/img/client-1.jpg",
+              name: "John Williams",
+              experience: "Web Designer(3 Years Exp.)"
+            },
+            {
+              image : "http://utouchdesign.com/themes/envato/escort/assets/img/client-2.jpg",
+              name: "Mark Anthony Ferrer",
+              experience: "Web Developer(2 Year Exp.)"
+            },
+            {
+              image : "http://utouchdesign.com/themes/envato/escort/assets/img/client-3.jpg",
+              name: "Richard Roe",
+              experience: "App Developer(3 Year Exp.)"
+            },
+            {
+              image : "http://utouchdesign.com/themes/envato/escort/assets/img/client-4.jpg",
+              name: "Alexa Ilacad",
+              experience: "Web Designer(1 Year Exp.)"
+            },
+            {
+              image : "http://utouchdesign.com/themes/envato/escort/assets/img/client-5.jpg",
+              name: "John Jose",
+              experience: "IOS Designer(2 Year Exp.)"
+            },
+            {
+              image : "http://utouchdesign.com/themes/envato/escort/assets/img/client-6.jpg",
+              name: "Jane Roe",
+              experience: "Web Master(2.5 Year Exp.)"
+            },
+            {
+              image : "http://utouchdesign.com/themes/envato/escort/assets/img/client-1.jpg",
+              name: "John Doe",
+              experience: "CMS Developer(3 Year Exp.)"
+            },
+            {
+              image : "http://utouchdesign.com/themes/envato/escort/assets/img/client-2.jpg",
+              name: "John Smith",
+              experience: "Web UI/UX Designer(2 Year Exp.)"
+            }
+            ]; %>
+  
+        <% featuredCardContent.forEach(element => { %>   
+          <%- include ('../components/molecule/candidate-section', element); %>
+        <% }) %>
+      
+    </div>
+     <div class="mt-10">   
+        <%- include('../components/atom/pagination'); %>
+     
+    </div>
+    
+    <!-- browse jobs button -->
+    </section>  
+
+    <%- include('../partials/shared/newsletter'); %>
+   
+
+

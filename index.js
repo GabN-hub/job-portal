@@ -15,7 +15,19 @@ app.get("/", function (req, res) {
 });
 
 app.get("/jobdetails", function (req, res) {
-  res.render("pages/jobdetails");
+res.render("pages/jobdetails");
+});
+
+app.get("/joblist", function (req, res) {
+  res.render("pages/joblist");
+});
+
+app.get("/jobcategories", function (req, res) {
+  res.render("pages/jobcategories");
+});
+
+app.get("/candidate", function (req, res) {
+  res.render("pages/candidate");
 });
 
 app.listen(3000);

@@ -6,6 +6,11 @@
 * {
   font-family: "Montserrat", sans-serif;
 }
+
+.disable-font {
+  font-family: initial;
+}
+
 /* footer bg style */
 footer {
   position: relative;
