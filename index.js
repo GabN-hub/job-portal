@@ -18,5 +18,13 @@ app.get("/joblist", function (req, res) {
   res.render("pages/joblist");
 });
 
+app.get("/jobcategories", function (req, res) {
+  res.render("pages/jobcategories");
+});
+
+app.get("/candidate", function (req, res) {
+  res.render("pages/candidate");
+});
+
 app.listen(3000);
 console.log("Server is running");

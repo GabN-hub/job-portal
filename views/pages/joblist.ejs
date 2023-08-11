@@ -1,9 +1,7 @@
- <div class="mt-20">
- <%- include('../partials/shared/banner'); %>
-</div>  
-
+  <div class="mt-20">
+  <%- include('../partials/shared/banner', {header: "Browse Job"}); %>
+  </div>
     <!-- Parent Div -->
-   
     <div class="flex flex-col justify-center lg:flex-row overflow-hidden">
       <!-- Left Side Parent Div-->
       <div class="lg:p-10 flex flex-col gap-6 items-center">
@@ -184,17 +182,10 @@
             <% }) %>
 
             <!-- Added new -->
-
-            <%- include("../components/atom/pagination"); %>
-
+            <%- include('../components/atom/pagination'); %>
         <!-- End of Right Side Parent Div -->                                     
       </div>
-    
+
       <!-- End of Parent Div -->
     </div>
-
     <%- include("../partials/shared/newsletter.ejs") %>
-
-
-
-
