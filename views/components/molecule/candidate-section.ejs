@@ -1,0 +1,20 @@
+<div class="featured-jobs-card p-4">
+    <!-- for job classification and heart icon -->
+    <div class="featured-jobs-header flex justify-end">
+      <!-- heart icons -->
+      <div class="heart-white bg-btngreen rounded-full py-1 px-2 cursor-pointer" x-data="{ redActive: false }" x-bind:class="{'text-red-500': redActive, 'text-white': !redActive}" x-on:click="redActive = !redActive">
+        <i class="fa-solid fa-heart text-white hover:text-red-500 duration-500 ease-in-out" x-bind:class="{'text-red-500': redActive, 'text-white': !redActive}"></i>
+      </div>
+    </div>
+  
+    <!-- contains the image, text, and button -->
+    <div class="featured-jobs-content">
+      <div class="feauted-jobs-img mx-auto rounded-full overflow-hidden hover:scale-110 hover:cursor-pointer duration-500 ease-in-out">
+        <img src="<%= image %>" class="p-1 rounded-full" />
+      </div>
+      <div class="featured-jobs-text text-center mt-3">
+        <h4 class="text-title font-poppins font-bold text-lg"><%= name %></h4>
+        <p class="text-address text-sm"><%= experience %></p>
+      </div>
+    </div>
+  </div>

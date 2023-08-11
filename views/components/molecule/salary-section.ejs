@@ -1,0 +1,11 @@
+<li>
+  <div class="flex border-b-2 border-dashed mt-2 justify-around">
+    <input class="w-4 h-4 " type="checkbox" />
+    <label class="ml-4 w-36 text-content font-medium" for=""><%= label %></label>
+    <% if (value === '' || typeof value === 'undefined') { %>
+      <label class="ml-20 mb-2" for=""></label>
+    <% } else { %>
+      <label class="ml-20 text-content font-medium" for=""><%= value %></label>
+    <% } %>
+  </div>
+</li>
