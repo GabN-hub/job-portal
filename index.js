@@ -14,6 +14,10 @@ app.get("/", function (req, res) {
   res.render("pages/index");
 });
 
+app.get("/jobdetails", function (req, res) {
+res.render("pages/jobdetails");
+});
+
 app.get("/joblist", function (req, res) {
   res.render("pages/joblist");
 });
@@ -28,3 +32,4 @@ app.get("/candidate", function (req, res) {
 
 app.listen(3000);
 console.log("Server is running");
+
