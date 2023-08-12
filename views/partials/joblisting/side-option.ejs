@@ -4,18 +4,23 @@
 
   <% if (['Qualification', 'Experience', 'Designation'].includes(sectionHeader)) { %>
     <div class="rounded-full px-2 bg-btngreen cursor-pointer"
-    id="dropDown">
+    id="dropDown<%= sectionHeader  %>" >
       <i class="fa-light fa-plus text-3xl text-white disable-font"></i>
     </div>
     <% } %>
   </div>
-        
-  <ul class="flex flex-col gap-2">
-  <% sectionArray.forEach((array) => { %>
-  <%- include("../../components/molecule/salary-section", array) %>
-  <% }) %>
-  </ul>
+  
+  
+  <div id="content<%= sectionHeader %>"
+    <% if (['Qualification', 'Experience', 'Designation'].includes(sectionHeader)) { %>
+      hidden
+    <% } %>
+    >
+    <ul class="flex flex-col gap-2" >
+    <% sectionArray.forEach((array) => { %>
+    <%- include("../../components/molecule/salary-section", array) %>
+    <% }) %>
+   </ul>
+  </div>
 
 </div>
-
-

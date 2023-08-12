@@ -12,24 +12,51 @@
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
   </head>
   <body>
-    <%- include('../partials/shared/navbar'); %>
+    
+
+    
+    <%- include('../partials/shared/navbar-landing'); %>
     <main><%- body %></main>
     <%- include('../partials/shared/footer'); %>
 
-    <!-- <script>
-      
-        const dropDownElement = document.getElementById("dropDown");
-        const contentElement = document.querySelector("ul");
 
-  
-        dropDownElement.addEventListener("click", function() {
-       
-          if (contentElement.style.display === "none" || contentElement.style.display === "") {
-            contentElement.style.display = "block";
-          } else {
-            contentElement.style.display = "none";
-          }
-        });
-    </script> -->
+    <script>
+      const dropDownDestination = document.getElementById("dropDownDesignation");
+      const contentDestination = document.getElementById("contentDesignation");
+    
+      dropDownDestination.addEventListener("click", function() {
+        if (contentDestination.hasAttribute("hidden")) {
+          contentDestination.removeAttribute("hidden");
+        } else {
+          contentDestination.setAttribute("hidden", "true");
+        }
+      });
+    
+      const dropDownQualification = document.getElementById("dropDownQualification");
+      const contentQualification = document.getElementById("contentQualification");
+    
+      dropDownQualification.addEventListener("click", function() {
+        if (contentQualification.hasAttribute("hidden")) {
+          contentQualification.removeAttribute("hidden");
+        } else {
+          contentQualification.setAttribute("hidden", "true");
+        }
+      });
+    
+      const dropDownExperience = document.getElementById("dropDownExperience");
+      const contentExperience = document.getElementById("contentExperience");
+    
+      dropDownExperience.addEventListener("click", function() {
+        if (contentExperience.hasAttribute("hidden")) {
+          contentExperience.removeAttribute("hidden");
+        } else {
+          contentExperience.setAttribute("hidden", "true");
+        }
+      });
+    </script>
+
+
+
   </body>
 </html>
+  
