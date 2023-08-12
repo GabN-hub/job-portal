@@ -13,6 +13,7 @@ module.exports = {
         address: "#8492af",
         btngreen: "#26ae61",
         grayBg: "#f8fafb",
+        darkGray: "#424242",
         categories: "#5a6773",
         grayBorder: "#eaeff5",
       },
