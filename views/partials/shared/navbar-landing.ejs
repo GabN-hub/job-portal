@@ -1,6 +1,6 @@
 <!-- // NAVBAR FOR LANDING PAGE ONLY -->
 <!-- navbar turns transparent when it reached lg, added transition on lg breakpoint using tailwind-->
-<nav class="bg-white w-full fixed top-0 z-50 py-2 text-navLinks <%= title === 'landing' ? 'lg:bg-transparent lg:text-white lg:transition lg:duration-1000 lg:ease-in-out' : ' ' %>">
+<nav x-data="{ open: false }" class="bg-white w-full fixed top-0 z-50 py-2 text-navLinks <%= title === 'landing' ? 'lg:bg-transparent lg:text-white lg:transition lg:duration-1000 lg:ease-in-out' : ' ' %>">
   <!-- this container is to set the max width -->
   <div class="nav-container h-full w-10/12 flex items-center justify-between mx-auto lg:max-w-7xl">
     <div class="nav-logo flex items-center gap-2">
@@ -14,15 +14,41 @@
         <a href="" class="font-semibold">Page4</a>
       </div>
     </div>
+    <span class="lg:hidden hover:cursor-pointer" @click="open = !open">
+      <i class="fa-solid fa-bars"></i>
+    </span>
     <!-- hidden on smaller screens. Buttons show on lg and larger screens  -->
     <div class="nav-buttons hidden lg:flex lg:items-center lg:gap-2">
-      <div class="bg-btngreen flex items-center gap-3 py-2 px-4 rounded-md text-white">
+      <div class="bg-btngreen flex items-center gap-3 py-2 px-4 rounded-md text-white hover:bg-green-700 duration-500 ease-in-out" >
         <i class="fa-regular fa-user" style="color: #ffffff"></i>
         <a href="" class="monstreat font-semibold">Login</a>
       </div>
-      <div class="bg-btngreen flex items-center gap-3 py-2 px-4 rounded-md text-white">
+      <div class="bg-btngreen flex items-center gap-3 py-2 px-4 rounded-md text-white hover:bg-green-700 duration-500 ease-in-out">
         <i class="fa-solid fa-briefcase" style="color: #ffffff"></i>
         <a href="" class="monstreat font-semibold">Register</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Dropdown menu for mobile -->
+  <div x-show="open" class="lg:hidden">
+    <!-- Add your dropdown content here -->
+    <div class="flex flex-col w-10/12 mx-auto">
+      <a href="/" class="home text-title font-semibold text-right p-2 border-b border-gray-500">Home</a>
+      <a href="/joblist" class="text-title font-semibold text-right p-2 border-b border-gray-500">Joblist</a>
+      <a href="" class="text-title font-semibold text-right p-2 border-b border-gray-500">Page3</a>
+      <a href="" class="text-title font-semibold text-right p-2 border-b border-gray-500">Page4</a>
+    </div>
+    <div class="w-10/12 mx-auto pt-2">
+      <div class="bg-btngreen flex items-center justify-center gap-3 py-2 px-4 rounded-full w-36 ml-auto hover:bg-green-700 duration-500 ease-in-out">
+        <i class="fa-regular fa-user" style="color: #ffffff"></i>
+        <a href="" class="text-white font-semibold">Login</a>
+      </div>
+    </div>
+    <div class="w-10/12 mx-auto pt-2">
+      <div class="bg-btngreen flex items-center justify-center gap-3 py-2 px-4 rounded-full w-36 ml-auto hover:bg-green-700 duration-500 ease-in-out">
+        <i class="fa-solid fa-briefcase" style="color: #ffffff"></i>
+        <a href="" class="text-white font-semibold">Register</a>
       </div>
     </div>
   </div>
