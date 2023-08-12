@@ -3,8 +3,8 @@
 <div class="mt-20">
 <%- include('../partials/shared/banner', {header : "Browse Categories"}); %>
 </div>
-<section class="bg-grayBg min-h-screen">
-    <div class="job-categories-container w-10/12 mx-auto py-20 lg:max-w-5xl xl:max-w-screen-xl">
+<section class="bg-grayBg min-h-fit py-20">
+    <div class="job-categories-container w-10/12 mx-auto  lg:max-w-5xl xl:max-w-screen-xl">
       <div class="job-categories-heading text-center mx-auto mb-9 lg:w-8/12">
         <h2 class="font-poppins text-title text-3xl font-bold mb-4 md:text-4xl">Job Categories</h2>
         
@@ -62,7 +62,9 @@
        <!-- view all categories button -->
       
     </div>
-    <%- include('../components/atom/pagination'); %>
+    <div class="mt-12">
+      <%- include('../components/atom/pagination'); %>
+    </div>
   </section>
     <%- include('../partials/shared/newsletter'); %>
     

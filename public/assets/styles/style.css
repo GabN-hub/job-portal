@@ -555,6 +555,10 @@ video {
   margin-top: 0.75rem;
   margin-bottom: 0.75rem;
 }
+.my-auto {
+  margin-top: auto;
+  margin-bottom: auto;
+}
 .mb-1 {
   margin-bottom: 0.25rem;
 }
@@ -672,6 +676,10 @@ video {
 }
 .min-h-screen {
   min-height: 100vh;
+}
+.min-h-fit {
+  min-height: -moz-fit-content;
+  min-height: fit-content;
 }
 .w-1\/2 {
   width: 50%;
@@ -1003,6 +1011,10 @@ video {
 .py-8 {
   padding-top: 2rem;
   padding-bottom: 2rem;
+}
+.py-40 {
+  padding-top: 10rem;
+  padding-bottom: 10rem;
 }
 .pb-3 {
   padding-bottom: 0.75rem;
