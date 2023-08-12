@@ -1,0 +1,123 @@
+<div class="mt-20">
+    <%- include('../partials/shared/banner', {header: "Dashboard"}); %>
+</div>
+
+<% const data = [
+{
+  logo : "http://utouchdesign.com/themes/envato/escort/assets/img/company_logo_1.png",
+  title : "Phyton Programmer",
+  company: "KMC",
+  location: "2708 Scenic Way, Sutter",
+  email : "mail@example.com",
+  posted : "01 Mar 2023"
+},
+{
+  logo : "http://utouchdesign.com/themes/envato/escort/assets/img/company_logo_2.png",
+  title : "CMS Development",
+  company: "DTN",
+  location: "2708 Scenic Way, Sutter",
+  email : "mail@example.com",
+  posted : "01 Mar 2023"
+},
+{
+  logo : "http://utouchdesign.com/themes/envato/escort/assets/img/company_logo_3.png",
+  title : "PHP Developer",
+  company: "Accenture",
+  location: "2708 Scenic Way, Sutter",
+  email : "mail@example.com",
+  posted : "01 Mar 2023"
+},
+{
+  logo : "http://utouchdesign.com/themes/envato/escort/assets/img/company_logo_4.png",
+  title : "Wordpress Developer",
+  company: "Yondu",
+  location: "2708 Scenic Way, Sutter",
+  email : "mail@example.com",
+  posted : "01 Mar 2023"
+},
+{
+  logo : "http://utouchdesign.com/themes/envato/escort/assets/img/company_logo_5.png",
+  title : "Web Maintenance",
+  company: "Collabera Inc.",
+  location: "2708 Scenic Way, Sutter",
+  email : "mail@example.com",
+  posted : "01 Mar 2023"
+},
+{
+  logo : "http://utouchdesign.com/themes/envato/escort/assets/img/company_logo_6.png",
+  title : "Frontend Designer",
+  company: "Emapta",
+  location: "2708 Scenic Way, Sutter",
+  email : "mail@example.com",
+  posted : "01 Mar 2023"
+},
+{
+  logo : "http://utouchdesign.com/themes/envato/escort/assets/img/company_logo_7.png",
+  title : "Java Developer",
+  company: "MicroSourcing",
+  location: "2708 Scenic Way, Sutter",
+  email : "mail@example.com",
+  posted : "01 Mar 2023"
+},
+{
+  logo : "http://utouchdesign.com/themes/envato/escort/assets/img/company_logo_8.png",
+  title : "Phyton Programmer",
+  company: "KMC",
+  location: "2708 Scenic Way, Sutter",
+  email : "mail@example.com",
+  posted : "01 Mar 2023"
+},
+{
+  logo : "http://utouchdesign.com/themes/envato/escort/assets/img/company_logo_9.png",
+  title : "Javascript Developer",
+  company: "DXN",
+  location: "2708 Scenic Way, Sutter",
+  email : "mail@example.com",
+  posted : "01 Mar 2023"
+},
+
+]; %>
+
+
+<main class="flex justify-center p-20 overflow-x-auto mb-10">
+    <table class="container">
+        <thead class="bg-gray-100">
+            <tr>
+                <th class="px-4 py-3 font-bold">Title</th>
+                <th class="px-4 py-3 font-bold">Location</th>
+                <th class="px-4 py-3 font-bold">Email</th>
+                <th class="px-4 py-3 font-bold">Posted</th>
+                <th class="px-4 py-3 font-bold">Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% data.forEach(job => { %>
+                <tr class="border border-gray-200 hover:bg-gray-100">
+                    <td class="px-4 md:px-2 py-2 md:flex items-center">
+                        <img src="<%= job.logo %>" alt="job logo" class="h-12 w-12 rounded-full p-0.5 border border-gray-200">
+                        <h6 class="mr-1"><%= job.title %></h6>
+                        <span class="bg-green-200 rounded text-green-600 text-sm px-1"><%= job.company %></span>
+                    </td>
+                    <td class="px-4 md:px-5 text-gray-500"><%= job.location %></td>
+                    <td class="px-4 md:px-20 text-gray-500"><%= job.email %></td>
+                    <td class="px-4 md:px-14 text-gray-500"><%= job.posted %></td>
+                    <td class="px-4 md:px-20">
+                        <div class="flex space-x-4">
+                            <!-- View Icon -->
+                            <div class="text-green-500 hover:text-green-600 cursor-pointer">
+                                <i class="fas fa-eye" title="View details"></i>
+                            </div>
+
+                            <!-- Delete Icon -->
+                            <div class="text-red-500 hover:text-red-600 cursor-pointer">
+                                <i class="fas fa-trash-alt" title="Delete"></i>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            <% }); %>
+        </tbody>
+    </table>
+</main>
+
+<%- include('../partials/shared/newsletter'); %>
