@@ -50,20 +50,33 @@
           </div>
         </div>
       </div>
-      <!-- bottom card - (eto yung mga job description) -->
-      <div class="second-container border border-green-500 rounded-md mt-8 w-full lg:col-span-2">
-        <div class="header">
-          <h3 class="p-6 bg-gray-500 rounded-md text-white">Job Description</h3>
-        </div>
-        <div class="content p-6">
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium facere nulla nam incidunt commodi ratione, vitae quisquam quos ut et?</p>
-          <p class="mt-4">lorem 20</p>
-        </div>
-      </div>
-    </div>
+      <!-- bottom card - (eto yung mga job description) - second-container -->
+         <!-- second container - paragraph content (partials > jobdeatils > second-container > paragraph.ejs) -->
+        <% const secondContainerSections = [
+          {
+            partial: '../partials/jobdetails/second-container/_paragraph',
+            title: 'Job Description',
+            content: [
+              'laska;lsk;laska',
+              'kasjaksjaksjaslkaj'
+            ]
+          },
+          {
+            partial: '../partials/jobdetails/second-container/_list',
+            title: 'List example',
+            content: {
+            listItems: ['items', 'kaslaks']
+            }
+          }
+        ];
 
+        secondContainerSections.forEach(section => { %>
+          <%- include(section.partial, { title: section.title, content: section.content }) %>
+        <% }); %>
+    
+      </div>
     <!-- right card - (eto yung may green na icon)-->
-    <div class="second-container h-fit w-full featured-jobs-card px-4">
+    <div class="third-container h-fit w-full featured-jobs-card px-4">
       <div class="header flex items-center gap-3 border-b border-blue-500 py-3">
         <div class="bg-btngreen w-9 h-9 rounded-full flex items-center justify-center">
           <i class="fa-solid fa-pen-nib"></i>
