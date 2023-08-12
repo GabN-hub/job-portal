@@ -13,7 +13,7 @@
      <div class="nav-pages hidden lg:flex lg:items-center lg:gap-4 lg:ml-5 xl:gap-5">
       <a href="/" class="home font-semibold <%= title !== 'landing' ? 'hover:text-green-500 duration-300 ease-in-out' : '' %>">Home</a>
       <a href="/candidate" class="font-semibold <%= title !== 'landing' ? 'hover:text-green-500 duration-300 ease-in-out' : '' %>">Candidate</a>
-      <a href="/" class="font-semibold <%= title !== 'landing' ? 'hover:text-green-500 duration-300 ease-in-out' : '' %>">Dashboard</a>
+      <a href="/dashboard" class="font-semibold <%= title !== 'landing' ? 'hover:text-green-500 duration-300 ease-in-out' : '' %>">Dashboard</a>
     
       <!-- hover drop down in nav links -->
         <div x-data="{ isOpen: false }" class="relative inline-block">
@@ -49,11 +49,11 @@
     <div class="nav-buttons hidden lg:flex lg:items-center lg:gap-2">
       <div class="bg-btngreen flex items-center gap-3 py-2 px-4 rounded-md text-white hover:bg-green-700 duration-500 ease-in-out">
         <i class="fa-regular fa-user" style="color: #ffffff"></i>
-        <a href="" class="monstreat font-semibold">Login</a>
+        <a href="/login" class="monstreat font-semibold">Login</a>
       </div>
       <div class="bg-btngreen flex items-center gap-3 py-2 px-4 rounded-md text-white hover:bg-green-700 duration-500 ease-in-out">
         <i class="fa-solid fa-briefcase" style="color: #ffffff"></i>
-        <a href="" class="monstreat font-semibold">Register</a>
+        <a href="/register" class="monstreat font-semibold">Register</a>
       </div>
     </div>
   
@@ -75,13 +75,13 @@
     <div class="w-10/12 mx-auto pt-2">
       <div class="bg-btngreen flex items-center justify-center gap-3 py-2 px-4 rounded-full w-36 ml-auto hover:bg-green-700 duration-500 ease-in-out">
         <i class="fa-regular fa-user" style="color: #ffffff"></i>
-        <a href="" class="text-white font-semibold">Login</a>
+        <a href="/login" class="text-white font-semibold">Login</a>
       </div>
     </div>
     <div class="w-10/12 mx-auto pt-2">
       <div class="bg-btngreen flex items-center justify-center gap-3 py-2 px-4 rounded-full w-36 ml-auto hover:bg-green-700 duration-500 ease-in-out">
         <i class="fa-solid fa-briefcase" style="color: #ffffff"></i>
-        <a href="" class="text-white font-semibold">Register</a>
+        <a href="/register" class="text-white font-semibold">Register</a>
       </div>
     </div>
     
