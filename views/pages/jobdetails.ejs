@@ -3,7 +3,7 @@
 <!-- main container is used to set the max-width -->
 <div class="main-container bg-pink-200 w-10/12 mx-auto py-20 lg:max-w-5xl xl:max-w-screen-xl">
   <!-- this div is the container of all the cards - used to set grid -->
-  <div class="row-elements gap-8 grid grid-cols-1 lg:grid-cols-3">
+  <div class="grid-set gap-8 grid grid-cols-1 lg:grid-cols-3">
     <!-- this is the first card - top card -->
     <div class="first-container w-full lg:col-span-2">
       <div class="featured-jobs-card p-4 bg-white">
@@ -50,131 +50,166 @@
           </div>
         </div>
       </div>
-      <!-- bottom card - (eto yung mga job description) - second-container -->
-         <!-- second container - paragraph content (partials > jobdeatils > second-container > paragraph.ejs) -->
-        <% const secondContainerSections = [
-          {
-            partial: '../partials/jobdetails/second-container/_paragraph',
-            title: 'Job Description',
-            content: [
-              'A web designer is a creative professional who combines artistic flair with technical skills to conceptualize and design visually appealing and functional websites. Drawing on their expertise in graphic design, user experience (UX) design, and coding, web designers collaborate with clients or project teams to craft websites that align with the brand\'s identity and meet the needs of the target audience.',
-              
-              'In their role, a web designer is responsible for translating client requirements and user expectations into engaging website layouts. They carefully select color schemes, typography, and imagery to create a harmonious visual environment that reflects the client\'s message and values. Additionally, web designers ensure that the user interface is intuitive and user-friendly, optimizing the navigation flow to enhance the overall user experience.'
-            ]
-          },
-          {
-            partial: '../partials/jobdetails/second-container/_list',
-            title: 'Job Skill',
-            content: {
-              listItems: [
-                'Implement updates, bug fixes, and performance optimizations to enhance website functionality and user experience ', 
-                'Ensure landing pages align with campaign objectives, branding guidelines, and design best practices.', 
-                'Collaborate effectively with cross-functional teams, including designers, marketers, and content creators, to meet project requirements.', 
-                'Stay up to date with emerging web technologies, industry trends, and best practices', 
-                'Develop and maintain APIs'
-              ]
-            }
-          },
-          {
-            partial: '../partials/jobdetails/second-container/_map',
-            title: 'Location',
-          },
-          {
-            partial: '../partials/jobdetails/second-container/_list',
-            title: 'Requirements',
-            content: {
-              listItems: [
-                'Bachelor\'s degree in Computer Science, Software Engineering, or a related field.',
-                'Strong programming skills in one or more of the following languages: Python, Java, C#, JavaScript, Ruby, or PHP.',
-                'Familiarity with software development tools and technologies such as Git, SQL databases, RESTful APIs, and cloud platforms such as AWS, Google Cloud or Azure.',
-                'Experience with agile software development methodologies and tools such as Jira, Trello, or Asana.',
-                'Strong problem-solving skills, with the ability to identify, analyze, and solve complex software issues.',
-                'Excellent communication and interpersonal skills, with the ability to work effectively in a team environment.',
-                'Ability to learn quickly and adapt to new technologies and programming languages.',
-                'Attention to detail, with the ability to write clean, efficient, and maintainable code.'
-            ]
-          }
-        }
-        ];
 
-        secondContainerSections.forEach(section => { %>
-          <%- include(section.partial, { title: section.title, content: section.content }) %>
-        <% }); %>
-    
-      </div>
-    <!-- right card - (eto yung may green na icon)-->
-    <div class="third-container h-fit w-full featured-jobs-card px-4">
-      <div class="header flex items-center gap-3 border-b border-blue-500 py-3">
-        <div class="bg-btngreen w-9 h-9 rounded-full flex items-center justify-center">
-          <i class="fa-solid fa-pen-nib"></i>
+      <!-- second-container -->
+      <div class="container2">
+        <div class="second-card border border-green-500 rounded-md mt-8 w-full">
+          <div class="header">
+            <h3 class="p-6 bg-gray-500 rounded-md text-white">HAJKHS</h3>
+          </div>
+          <div class="content p-6">
+            <p>lkaskld</p>
+          </div>
         </div>
-        <h3>Location</h3>
+
+        <div class="second-card border border-green-500 rounded-md mt-8 w-full">
+          <div class="header">
+            <h3 class="p-6 bg-gray-500 rounded-md text-white">HAJKHS</h3>
+          </div>
+          <div class="content p-6">
+            <p>lkaskld</p>
+          </div>
+        </div>
+
+        <div class="second-card border border-green-500 rounded-md mt-8 w-full">
+          <div class="header">
+            <h3 class="p-6 bg-gray-500 rounded-md text-white">HAJKHS</h3>
+          </div>
+          <div class="content p-6">
+            <p>lkaskld</p>
+          </div>
+        </div>
+
+        <div class="second-card border border-green-500 rounded-md mt-8 w-full">
+          <div class="header">
+            <h3 class="p-6 bg-gray-500 rounded-md text-white">HAJKHS</h3>
+          </div>
+          <div class="content p-6">
+            <p>lkaskld</p>
+          </div>
+        </div>
       </div>
-      <div class="px-2">
-        <ul>
-          <li class="flex gap-2 py-2">
+    </div>
+
+    <!-- third-container-->
+    <div class="container3 lg:col-span-1">
+      <div class="third-card h-fit w-full featured-jobs-card px-4">
+        <div class="header flex items-center gap-3 border-b border-blue-500 py-3">
+          <div class="bg-btngreen w-9 h-9 rounded-full flex items-center justify-center">
             <i class="fa-solid fa-pen-nib"></i>
-            <p>20k to 50k</p>
-          </li>
-          <li class="flex gap-2 py-2">
+          </div>
+          <h3>Location</h3>
+        </div>
+        <div class="px-2">
+          <ul>
+            <li class="flex gap-2 py-2">
+              <i class="fa-solid fa-pen-nib"></i>
+              <p>20k to 50k</p>
+            </li>
+            <li class="flex gap-2 py-2">
+              <i class="fa-solid fa-pen-nib"></i>
+              <p>20k to 50k</p>
+            </li>
+            <li class="flex gap-2 py-2">
+              <i class="fa-solid fa-pen-nib"></i>
+              <p>20k to 50k</p>
+            </li>
+            <li class="flex gap-2 py-2">
+              <i class="fa-solid fa-pen-nib"></i>
+              <p>20k to 50k</p>
+            </li>
+            <li class="flex gap-2 py-2">
+              <i class="fa-solid fa-pen-nib"></i>
+              <p>20k to 50k</p>
+            </li>
+            <li class="flex gap-2 py-2">
+              <i class="fa-solid fa-pen-nib"></i>
+              <p>20k to 50k</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="third-card h-fit w-full featured-jobs-card px-4">
+        <div class="header flex items-center gap-3 border-b border-blue-500 py-3">
+          <div class="bg-btngreen w-9 h-9 rounded-full flex items-center justify-center">
             <i class="fa-solid fa-pen-nib"></i>
-            <p>20k to 50k</p>
-          </li>
-          <li class="flex gap-2 py-2">
+          </div>
+          <h3>Location</h3>
+        </div>
+        <div class="px-2">
+          <ul>
+            <li class="flex gap-2 py-2">
+              <i class="fa-solid fa-pen-nib"></i>
+              <p>20k to 50k</p>
+            </li>
+            <li class="flex gap-2 py-2">
+              <i class="fa-solid fa-pen-nib"></i>
+              <p>20k to 50k</p>
+            </li>
+            <li class="flex gap-2 py-2">
+              <i class="fa-solid fa-pen-nib"></i>
+              <p>20k to 50k</p>
+            </li>
+            <li class="flex gap-2 py-2">
+              <i class="fa-solid fa-pen-nib"></i>
+              <p>20k to 50k</p>
+            </li>
+            <li class="flex gap-2 py-2">
+              <i class="fa-solid fa-pen-nib"></i>
+              <p>20k to 50k</p>
+            </li>
+            <li class="flex gap-2 py-2">
+              <i class="fa-solid fa-pen-nib"></i>
+              <p>20k to 50k</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="third-card h-fit w-full featured-jobs-card px-4">
+        <div class="header flex items-center gap-3 border-b border-blue-500 py-3">
+          <div class="bg-btngreen w-9 h-9 rounded-full flex items-center justify-center">
             <i class="fa-solid fa-pen-nib"></i>
-            <p>20k to 50k</p>
-          </li>
-          <li class="flex gap-2 py-2">
-            <i class="fa-solid fa-pen-nib"></i>
-            <p>20k to 50k</p>
-          </li>
-          <li class="flex gap-2 py-2">
-            <i class="fa-solid fa-pen-nib"></i>
-            <p>20k to 50k</p>
-          </li>
-          <li class="flex gap-2 py-2">
-            <i class="fa-solid fa-pen-nib"></i>
-            <p>20k to 50k</p>
-          </li>
-        </ul>
+          </div>
+          <h3>Location</h3>
+        </div>
+        <div class="px-2">
+          <ul>
+            <li class="flex gap-2 py-2">
+              <i class="fa-solid fa-pen-nib"></i>
+              <p>20k to 50k</p>
+            </li>
+            <li class="flex gap-2 py-2">
+              <i class="fa-solid fa-pen-nib"></i>
+              <p>20k to 50k</p>
+            </li>
+            <li class="flex gap-2 py-2">
+              <i class="fa-solid fa-pen-nib"></i>
+              <p>20k to 50k</p>
+            </li>
+            <li class="flex gap-2 py-2">
+              <i class="fa-solid fa-pen-nib"></i>
+              <p>20k to 50k</p>
+            </li>
+            <li class="flex gap-2 py-2">
+              <i class="fa-solid fa-pen-nib"></i>
+              <p>20k to 50k</p>
+            </li>
+            <li class="flex gap-2 py-2">
+              <i class="fa-solid fa-pen-nib"></i>
+              <p>20k to 50k</p>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   </div>
 
-
   <h3>Similar Jobs</h3>
-    <div class="featured-jobs-container grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
-      <% const featuredCardContent = [
-          {
-            image : "http://utouchdesign.com/themes/envato/escort/assets/img/company_logo_1.png",
-            header: "FULL TIME",
-            subHeader: "Product Redesign",
-            address: "2708 Scenic Way, IL 62373"
-          },
-          {
-            image : "http://utouchdesign.com/themes/envato/escort/assets/img/company_logo_2.png",
-            header: "FULL TIME",
-            subHeader: "New Product Mockup",
-            address: "2708 Scenic Way, IL 62373"
-          },
-          {
-            image : "http://utouchdesign.com/themes/envato/escort/assets/img/company_logo_3.png",
-            header: "PART TIME",
-            subHeader: "Custom Php Developer",
-            address: "3765 C Street, Worcester"
-          },
-          {
-            image : "http://utouchdesign.com/themes/envato/escort/assets/img/company_logo_4.png",
-            header: "PART TIME",
-            subHeader: "Wordpress Developer",
-            address: "2719 Duff Avenue, Winooski"
-          },
-          ]; %>
-      
-      <% featuredCardContent.forEach(element => { %>   
-        <%- include ('../components/molecule/featured-card', element); %>
-      <% }) %>
-    </div>
-    
+  <div class="featured-jobs-container grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
+    <% const featuredCardContent = [ { image : "http://utouchdesign.com/themes/envato/escort/assets/img/company_logo_1.png", header: "FULL TIME", subHeader: "Product Redesign", address: "2708 Scenic Way, IL 62373" }, { image :
+    "http://utouchdesign.com/themes/envato/escort/assets/img/company_logo_2.png", header: "FULL TIME", subHeader: "New Product Mockup", address: "2708 Scenic Way, IL 62373" }, { image : "http://utouchdesign.com/themes/envato/escort/assets/img/company_logo_3.png", header: "PART TIME", subHeader:
+    "Custom Php Developer", address: "3765 C Street, Worcester" }, { image : "http://utouchdesign.com/themes/envato/escort/assets/img/company_logo_4.png", header: "PART TIME", subHeader: "Wordpress Developer", address: "2719 Duff Avenue, Winooski" }, ]; %> <% featuredCardContent.forEach(element => {
+    %> <%- include ('../components/molecule/featured-card', element); %> <% }) %>
+  </div>
 </div>
 <%- include('../partials/shared/newsletter'); %>
