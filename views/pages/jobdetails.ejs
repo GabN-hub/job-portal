@@ -78,7 +78,23 @@
           {
             partial: '../partials/jobdetails/second-container/_map',
             title: 'Location',
+          },
+          {
+            partial: '../partials/jobdetails/second-container/_list',
+            title: 'Requirements',
+            content: {
+              listItems: [
+                'Bachelor\'s degree in Computer Science, Software Engineering, or a related field.',
+                'Strong programming skills in one or more of the following languages: Python, Java, C#, JavaScript, Ruby, or PHP.',
+                'Familiarity with software development tools and technologies such as Git, SQL databases, RESTful APIs, and cloud platforms such as AWS, Google Cloud or Azure.',
+                'Experience with agile software development methodologies and tools such as Jira, Trello, or Asana.',
+                'Strong problem-solving skills, with the ability to identify, analyze, and solve complex software issues.',
+                'Excellent communication and interpersonal skills, with the ability to work effectively in a team environment.',
+                'Ability to learn quickly and adapt to new technologies and programming languages.',
+                'Attention to detail, with the ability to write clean, efficient, and maintainable code.'
+            ]
           }
+        }
         ];
 
         secondContainerSections.forEach(section => { %>
@@ -125,7 +141,7 @@
     </div>
   </div>
 
-  // reused section, obtained from featured-jobs
+
   <h3>Similar Jobs</h3>
     <div class="featured-jobs-container grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
       <% const featuredCardContent = [
