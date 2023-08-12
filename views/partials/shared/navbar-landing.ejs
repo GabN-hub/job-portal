@@ -8,15 +8,17 @@
         <img src="assets/images/logo.svg" alt="logo of the business" class="md:w-20" />
       </a>
       <h2 class="business-name font-heebo text-title font-bold text-2xl md:text-3xl <%= title === 'landing' ? 'lg:text-white' : '' %>">remote.ly</h2>
+      
       <!-- hidden on smaller screens. Links show on lg and larger screens -->
-      <div class="nav-pages hidden lg:flex lg:items-center lg:gap-4 lg:ml-5 xl:gap-5">
-        <a href="/" class="home font-semibold">Home</a>
-        <a href="/candidate" class="font-semibold">Candidate</a>
-        <a href="" class="font-semibold">Dashboard</a>
-        <!-- hover drop down in nav links -->
+     <div class="nav-pages hidden lg:flex lg:items-center lg:gap-4 lg:ml-5 xl:gap-5">
+      <a href="/" class="home font-semibold <%= title !== 'landing' ? 'hover:text-green-500 duration-300 ease-in-out' : '' %>">Home</a>
+      <a href="/candidate" class="font-semibold <%= title !== 'landing' ? 'hover:text-green-500 duration-300 ease-in-out' : '' %>">Candidate</a>
+      <a href="" class="font-semibold <%= title !== 'landing' ? 'hover:text-green-500 duration-300 ease-in-out' : '' %>">Dashboard</a>
+    
+      <!-- hover drop down in nav links -->
         <div x-data="{ isOpen: false }" class="relative inline-block">
           <div @mouseenter="isOpen = true" @mouseleave="isOpen = false" class="flex items-center justify-center gap-4 cursor-pointer">
-            <a href="#" class="font-semibold">Job <i class="fa-solid fa-angle-down"></i></a>
+              <a href="#" class="font-semibold <%= title !== 'landing' ? 'hover:text-green-500 duration-300 ease-in-out' : '' %>">Job <i class="fa-solid fa-angle-down"></i></a>
           </div>
 
           <div
@@ -31,9 +33,9 @@
             x-transition:leave-end="opacity-0 transform scale-95"
             class="absolute mt-2 w-40 bg-white border border-gray-300 shadow-lg rounded-md py-2"
           >
-            <a href="/jobdetails" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Job Details</a>
-            <a href="/joblist" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Job List</a>
-            <a href="/jobcategories" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Job Categories</a>
+            <a href="/jobdetails" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-green-500 duration-300 ease-in-out">Job Details</a>
+            <a href="/joblist" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-green-500 duration-300 ease-in-out">Job List</a>
+            <a href="/jobcategories" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-green-500 duration-300 ease-in-out">Job Categories</a>
           </div>
         </div>
       </div>
