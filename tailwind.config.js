@@ -17,6 +17,7 @@ module.exports = {
         darkGray: "#424242",
         categories: "#5a6773",
         grayBorder: "#eaeff5",
+        navLinks: "#6b797c",
       },
     },
   },

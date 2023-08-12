@@ -1,31 +1,29 @@
 <!-- // NAVBAR FOR LANDING PAGE ONLY -->
 <!-- navbar turns transparent when it reached lg, added transition on lg breakpoint using tailwind-->
-<nav class="bg-white w-full fixed top-0 z-50 py-2  <%= title === 'landing' ? 'lg:bg-transparent lg:transition lg:duration-1000 lg:ease-in-out' : ' ' %>">
+<nav class="bg-white w-full fixed top-0 z-50 py-2 text-navLinks <%= title === 'landing' ? 'lg:bg-transparent lg:text-white lg:transition lg:duration-1000 lg:ease-in-out' : ' ' %>">
   <!-- this container is to set the max width -->
-  <div class="nav-container h-full w-10/12 flex items-center justify-between mx-auto lg:max-w-7xl lg:text-white">
+  <div class="nav-container h-full w-10/12 flex items-center justify-between mx-auto lg:max-w-7xl">
     <div class="nav-logo flex items-center gap-2">
       <img src="assets/images/logo.svg" alt="logo of the business" class="md:w-20" />
-      <h2 class="business-name font-heebo font-bold text-2xl md:text-3xl">remote.ly</h2>
+      <h2 class="business-name font-heebo text-title font-bold text-2xl md:text-3xl <%= title === 'landing' ? 'lg:text-white' : '' %>">remote.ly</h2>
       <!-- hidden on smaller screens. Links show on lg and larger screens -->
       <div class="nav-pages hidden lg:flex lg:items-center lg:gap-2 lg:ml-5 xl:gap-5">
-        <a href="" class="home text-white font-semibold">Home</a>
-        <a href="" class="text-white font-semibold">Page2</a>
-        <a href="" class="text-white font-semibold">Page3</a>
-        <a href="" class="text-white font-semibold">Page4</a>
+        <a href="" class="home font-semibold">Home</a>
+        <a href="" class="font-semibold">Page2</a>
+        <a href="" class="font-semibold">Page3</a>
+        <a href="" class="font-semibold">Page4</a>
       </div>
     </div>
     <!-- hidden on smaller screens. Buttons show on lg and larger screens  -->
     <div class="nav-buttons hidden lg:flex lg:items-center lg:gap-2">
-      <div class="bg-btngreen flex items-center gap-3 py-2 px-4 rounded-md hover:bg-green-700 duration-500 ease-in-out">
+      <div class="bg-btngreen flex items-center gap-3 py-2 px-4 rounded-md text-white">
         <i class="fa-regular fa-user" style="color: #ffffff"></i>
-        <a href="" class="text-white font-semibold">Login</a>
+        <a href="" class="monstreat font-semibold">Login</a>
       </div>
-      <div class="bg-btngreen flex items-center gap-3 py-2 px-4 rounded-md hover:bg-green-700 duration-500 ease-in-out">
+      <div class="bg-btngreen flex items-center gap-3 py-2 px-4 rounded-md text-white">
         <i class="fa-solid fa-briefcase" style="color: #ffffff"></i>
-        <a href="" class="text-white font-semibold">Register</a>
+        <a href="" class="monstreat font-semibold">Register</a>
       </div>
     </div>
   </div>
 </nav>
-
-
