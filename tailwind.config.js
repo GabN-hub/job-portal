@@ -13,9 +13,9 @@ module.exports = {
         address: "#8492af",
         btngreen: "#26ae61",
         grayBg: "#f8fafb",
-        content: "#707F8C",
-        header: "#334e6f",
-        categories: "#5a6773"
+        darkGray: "#424242",
+        categories: "#5a6773",
+        grayBorder: "#eaeff5",
       },
     },
   },

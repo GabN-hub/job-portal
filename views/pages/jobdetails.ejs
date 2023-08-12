@@ -1,0 +1,173 @@
+<div class="mt-20"><%- include('../partials/shared/banner', {header : "Job Details"}); %></div>
+
+<!-- main container is used to set the max-width -->
+<div class="main-container w-10/12 mx-auto py-20 lg:max-w-5xl xl:max-w-screen-xl">
+  <!-- this div is the container of all the cards - used to set grid -->
+  <div class="grid-set gap-8 grid grid-cols-1 lg:grid-cols-3">
+    <!-- this is the first card - top card -->
+    <div class="first-container w-full lg:col-span-2">
+      <div class="featured-jobs-card p-4">
+        <div class="flex flex-col lg:flex-row">
+          <div class="featured-jobs-content border-b border-grayBorder flex flex-col justify-center  lg:w-2/6 lg:border-r lg:border-b-0">
+            <div class=" mx-auto rounded-full overflow-hidden">
+              <img src="http://utouchdesign.com/themes/envato/escort/assets/img/company_logo_1.png" alt="featued jobs image" class="p-1 rounded-full border w-24" />
+            </div>
+            <div class="text-center mt-3 w-fit mx-auto">
+              <h4 class="fulltime font-poppins font-semibold text-lg mb-2">Web Designer</h4>
+              <p class="text-sm text-description font-bold">2708 Scenic Way, IL 62373</p>
+            </div>
+            <div class="mx-auto w-max mt-3 mb-4">
+              <%- include('../components/atom/btngreen', { btnText: 'APPLY NOW' }); %>
+            </div>
+          </div>
+          <div class="p-4">
+            <ul>
+              <li class="flex gap-2 py-2 items-center text-description">
+               <i class="fa-regular fa-money-bill-1"></i>
+                <p class="font-medium px-1">20k to 50k/ Month</p>
+              </li>
+              <li class="flex gap-2 py-2 items-center text-description">
+                <i class="fa-solid fa-phone"></i>
+                <p class="font-medium px-1">09882371932872</p>
+              </li>
+              <li class="flex gap-2 py-2 items-center text-description">
+                <i class="fa-solid fa-envelope"></i>
+                <p class="font-medium px-1">remotely@yahoo.com</p>
+              </li>
+              <li class="flex gap-2 py-2 items-center text-description">
+                <i class="fa-solid fa-business-time"></i>
+                <p class="font-medium fulltime px-2 py-1">Full Time</p>
+              </li>
+              <li class="flex gap-2 py-2 items-center text-description">
+                <i class="fa-solid fa-user"></i>
+                <p class="font-medium text-red-500 px-1">7 Open Position</p>
+              </li>
+              <li class="flex gap-2 py-2 items-center text-description">
+                <i class="fa-solid fa-laptop"></i>
+                <p class="font-medium px-1">3 years Experience</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- second-container -->
+      <div class="container2">
+        <% const secondContainerSections = [
+          {
+            partial: '../partials/jobdetails/second-container/_paragraph',
+            title: 'Job Description',
+            content: [
+              'A web designer is a creative professional who combines artistic flair with technical skills to conceptualize and design visually appealing and functional websites. Drawing on their expertise in graphic design, user experience (UX) design, and coding, web designers collaborate with clients or project teams to craft websites that align with the brand\'s identity and meet the needs of the target audience.',
+              
+              'In their role, a web designer is responsible for translating client requirements and user expectations into engaging website layouts. They carefully select color schemes, typography, and imagery to create a harmonious visual environment that reflects the client\'s message and values. Additionally, web designers ensure that the user interface is intuitive and user-friendly, optimizing the navigation flow to enhance the overall user experience.'
+            ]
+          },
+          {
+            partial: '../partials/jobdetails/second-container/_list',
+            title: 'Job Skill',
+            content: {
+              listItems: [
+                'Implement updates, bug fixes, and performance optimizations to enhance website functionality and user experience ', 
+                'Ensure landing pages align with campaign objectives, branding guidelines, and design best practices.', 
+                'Collaborate effectively with cross-functional teams, including designers, marketers, and content creators, to meet project requirements.', 
+                'Stay up to date with emerging web technologies, industry trends, and best practices', 
+                'Develop and maintain APIs'
+              ]
+            }
+          },
+          {
+            partial: '../partials/jobdetails/second-container/_map',
+            title: 'Location',
+          },
+          {
+            partial: '../partials/jobdetails/second-container/_list',
+            title: 'Requirements',
+            content: {
+              listItems: [
+                'Bachelor\'s degree in Computer Science, Software Engineering, or a related field.',
+                'Strong programming skills in one or more of the following languages: Python, Java, C#, JavaScript, Ruby, or PHP.',
+                'Familiarity with software development tools and technologies such as Git, SQL databases, RESTful APIs, and cloud platforms such as AWS, Google Cloud or Azure.',
+                'Experience with agile software development methodologies and tools such as Jira, Trello, or Asana.',
+                'Strong problem-solving skills, with the ability to identify, analyze, and solve complex software issues.',
+                'Excellent communication and interpersonal skills, with the ability to work effectively in a team environment.',
+                'Ability to learn quickly and adapt to new technologies and programming languages.',
+                'Attention to detail, with the ability to write clean, efficient, and maintainable code.'
+            ]
+          }
+        }
+        ];
+
+        secondContainerSections.forEach(section => { %>
+          <%- include(section.partial, { title: section.title, content: section.content }) %>
+        <% }); %>
+
+
+      </div>
+    </div>
+
+
+
+    <div class="container3 lg:col-span-1">
+       <% const thirdContainerSections = [
+          {
+            partial: '../partials/jobdetails/third-container/_summary',
+            mainIcon: '<i class="fa-solid fa-info" style="color: #ffffff;"></i>',
+            title: 'Information',
+            items: [
+              { iconClass: 'fa-regular fa-money-bill-1', content: 'Package: 20K To 50K/Month' },
+              { iconClass: 'fa-solid fa-globe', content: 'https://www.remotely.com' },
+              { iconClass: 'fa-solid fa-phone', content: '09882371932872' },
+              { iconClass: 'fa-solid fa-envelope', content: 'remotely@yahoo.com' },
+              { iconClass: 'fa-solid fa-graduation-cap', content: 'Bachelor Degrees' },
+              { iconClass: 'fa-solid fa-laptop', content: '3 Year Exp.' },
+            ] 
+          },
+          {
+            partial: '../partials/jobdetails/third-container/_operating-hours',  // Changed the partial here
+            mainIcon: '<i class="fa-regular fa-clock" style="color: #ffffff;"></i>',
+            title: 'Operating Hours',
+            items: [
+              { day: 'Monday', time: '9 AM - 5 PM' },
+              { day: 'Tuesday', time: '9 AM - 5 PM' },
+              { day: 'Wednesday', time: '9 AM - 5 PM' },
+              { day: 'Thursday', time: '9 AM - 5 PM' },
+              { day: 'Friday', time: '9 AM - 5 PM' },
+              { day: 'Saturday', time: '9 AM - 3 PM' },
+              { day: 'Sunday', time: 'Closed' },
+            ]
+          },
+             {
+            partial: '../partials/jobdetails/third-container/_location',  // Changed the partial here
+            mainIcon: '<i class="fa-solid fa-location-dot" style="color: #ffffff;"></i>',
+            title: 'Location',
+            items: [
+              { day: 'Monday', time: '7' },
+              { day: 'Tuesday', time: '8' },
+              { day: 'Wednesday', time: '9' },
+              { day: 'Thursday', time: '9' },
+              { day: 'Friday', time: '9' },
+              { day: 'Saturday', time: '9' },
+              { day: 'Sunday', time: 'Closed' },
+            ]
+          }
+        ];
+
+        thirdContainerSections.forEach(section => { %>
+          <%- include(section.partial, { title: section.title, items: section.items, mainIcon: section.mainIcon }) %>
+        <% }); %>
+    
+    </div>
+  </div>
+
+  <div class="mt-12 mb-8">
+    <h3 class=" font-poppins text-xl font-semibold text-title">Similar Jobs</h3>
+  </div>
+  <div class="featured-jobs-container grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
+    <% const featuredCardContent = [ { image : "http://utouchdesign.com/themes/envato/escort/assets/img/company_logo_1.png", header: "FULL TIME", subHeader: "Product Redesign", address: "2708 Scenic Way, IL 62373" }, { image :
+    "http://utouchdesign.com/themes/envato/escort/assets/img/company_logo_2.png", header: "FULL TIME", subHeader: "New Product Mockup", address: "2708 Scenic Way, IL 62373" }, { image : "http://utouchdesign.com/themes/envato/escort/assets/img/company_logo_3.png", header: "PART TIME", subHeader:
+    "Custom Php Developer", address: "3765 C Street, Worcester" }, { image : "http://utouchdesign.com/themes/envato/escort/assets/img/company_logo_4.png", header: "PART TIME", subHeader: "Wordpress Developer", address: "2719 Duff Avenue, Winooski" }, ]; %> <% featuredCardContent.forEach(element => {
+    %> <%- include ('../components/molecule/featured-card', element); %> <% }) %>
+  </div>
+</div>
+<%- include('../partials/shared/newsletter'); %>
