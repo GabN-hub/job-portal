@@ -1,23 +1,23 @@
 <div class="mt-20"><%- include('../partials/shared/banner', {header : "Job Details"}); %></div>
 
 <!-- main container is used to set the max-width -->
-<div class="main-container bg-pink-200 w-10/12 mx-auto py-20 lg:max-w-5xl xl:max-w-screen-xl">
+<div class="main-container w-10/12 mx-auto py-20 lg:max-w-5xl xl:max-w-screen-xl">
   <!-- this div is the container of all the cards - used to set grid -->
   <div class="grid-set gap-8 grid grid-cols-1 lg:grid-cols-3">
     <!-- this is the first card - top card -->
     <div class="first-container w-full lg:col-span-2">
-      <div class="featured-jobs-card p-4 bg-white">
+      <div class="featured-jobs-card p-4">
         <div class="flex flex-col lg:flex-row">
-          <div class="featured-jobs-content border-b lg:w-2/6 border-blue-600 lg:border-r lg:border-b-0">
-            <div class="feauted-jobs-img mx-auto rounded-full overflow-hidden">
-              <img src="http://utouchdesign.com/themes/envato/escort/assets/img/company_logo_1.png" alt="featued jobs image" class="p-1 rounded-full" />
+          <div class="featured-jobs-content border-b border-grayBorder flex flex-col justify-center  lg:w-2/6 lg:border-r lg:border-b-0">
+            <div class=" mx-auto rounded-full overflow-hidden">
+              <img src="http://utouchdesign.com/themes/envato/escort/assets/img/company_logo_1.png" alt="featued jobs image" class="p-1 rounded-full border w-24" />
             </div>
-            <div class="featured-jobs-text text-center mt-3">
-              <h4 class="job-title poppins font-semibold text-lg">Web Designer</h4>
-              <p class="address monstreat text-sm">2708 Scenic Way, IL 62373</p>
+            <div class="text-center mt-3 w-fit mx-auto">
+              <h4 class="fulltime font-poppins font-semibold text-lg mb-2">Web Designer</h4>
+              <p class="text-sm text-description font-bold">2708 Scenic Way, IL 62373</p>
             </div>
-            <div class="featured-jobs-button buttons2 mx-auto w-max my-4 rounded mt-6">
-              <button class="px-4 py-2 monstreat text-xs">APPLY NOW</button>
+            <div class="mx-auto w-max mt-3 mb-4">
+              <%- include('../components/atom/btngreen', { btnText: 'APPLY NOW' }); %>
             </div>
           </div>
           <div class="p-4">
