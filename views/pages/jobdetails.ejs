@@ -74,11 +74,11 @@
                 'Develop and maintain APIs'
               ]
             }
+          },
+          {
+            partial: '../partials/jobdetails/second-container/_map',
+            title: 'Location',
           }
-          // {
-          //   partial: '../partials/jobdetails/second-container/_map',
-          //   title: 'Location'
-          // }
         ];
 
         secondContainerSections.forEach(section => { %>
@@ -124,7 +124,9 @@
       </div>
     </div>
   </div>
-  <h3>Job Details</h3>
+
+  // reused section, obtained from featured-jobs
+  <h3>Similar Jobs</h3>
     <div class="featured-jobs-container grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
       <% const featuredCardContent = [
           {
