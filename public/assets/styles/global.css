@@ -85,3 +85,10 @@ footer {
   background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../../assets/images/banner.png) center top / cover;
   position: relative;
 }
+
+
+/* box shadows */
+.accountform {
+  box-shadow: 0 5px 25px 0 rgba(41,128,185,0.15);
+  -webkit-box-shadow: 0 5px 25px 0 rgba(41,128,185,0.15);
+}
