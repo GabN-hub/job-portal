@@ -80,51 +80,58 @@
 
 ]; %>
 
+<div data-aos="fade-out"
+      data-aos-easing="linear"
+     data-aos-duration="1500">
 
-<!-- container for the whole dashboard section -->
-<main class="lg:justify-center">
-  <!-- this div is to set the maximum width -->
-  <div class="w-10/12 overflow-auto bg-white mx-auto py-20 lg:max-w-5xl xl:max-w-screen-xl">
-    <table class="w-full ">
-      <thead class="bg-gray-100 text-description">
-        <tr>
-            <th class="px-5 py-4 font-bold text-left">Title</th>
-            <th class="px-5 py-4 font-bold text-left">Location</th>
-            <th class="px-5 py-4 font-bold text-left">Email</th>
-            <th class="px-5 py-4 font-bold text-left">Posted</th>
-            <th class="px-5 py-4 font-bold text-left">Action</th>
-        </tr>
-      </thead>
-      <tbody>
-          <% data.forEach(job => { %>
-              <tr class="border border-gray-200 hover:bg-gray-100 hover:cursor-pointer duration-300 ease-in-out">
-                  <td class="py-3 px-4 md:flex items-center gap-3">
-                      <img src="<%= job.logo %>" alt="job logo" class="h-12 w-12 rounded-full p-0.5 border border-gray-200 mr-3">
-                      <span class="w-44"><h6 class="text-title font-medium"><%= job.title %></h6></span>
-                      <span class="green-highlight"><%= job.company %></span>
-                  </td>
-                  <td class="py-3 px-4 text-title font-medium"><%= job.location %></td>
-                  <td class="py-3 px-4 text-title font-medium"><%= job.email %></td>
-                  <td class="py-3 px-4 text-title font-medium"><%= job.posted %></td>
-                  <td class="py-3 px-4">
-                      <div class="flex space-x-4">
-                          <!-- View Icon -->
-                          <div class="text-green-500 hover:text-green-600 cursor-pointer">
-                              <i class="fas fa-eye" title="View details"></i>
+        <!-- container for the whole dashboard section -->
+    <main class="lg:justify-center">
+      <!-- this div is to set the maximum width -->
+      <div class="w-10/12 overflow-auto bg-white mx-auto py-20 lg:max-w-5xl xl:max-w-screen-xl">
+        <table class="w-full ">
+          <thead class="bg-gray-100 text-description">
+            <tr>
+                <th class="px-5 py-4 font-bold text-left">Title</th>
+                <th class="px-5 py-4 font-bold text-left">Location</th>
+                <th class="px-5 py-4 font-bold text-left">Email</th>
+                <th class="px-5 py-4 font-bold text-left">Posted</th>
+                <th class="px-5 py-4 font-bold text-left">Action</th>
+            </tr>
+          </thead>
+          <tbody>
+              <% data.forEach(job => { %>
+                  <tr class="border border-gray-200 hover:bg-gray-100 hover:cursor-pointer duration-300 ease-in-out">
+                      <td class="py-3 px-4 md:flex items-center gap-3">
+                          <img src="<%= job.logo %>" alt="job logo" class="h-12 w-12 rounded-full p-0.5 border border-gray-200 mr-3">
+                          <span class="w-44"><h6 class="text-title font-medium"><%= job.title %></h6></span>
+                          <span class="green-highlight"><%= job.company %></span>
+                      </td>
+                      <td class="py-3 px-4 text-title font-medium"><%= job.location %></td>
+                      <td class="py-3 px-4 text-title font-medium"><%= job.email %></td>
+                      <td class="py-3 px-4 text-title font-medium"><%= job.posted %></td>
+                      <td class="py-3 px-4">
+                          <div class="flex space-x-4">
+                              <!-- View Icon -->
+                              <div class="text-green-500 hover:text-green-600 cursor-pointer">
+                                  <i class="fas fa-eye" title="View details"></i>
+                              </div>
+
+                              <!-- Delete Icon -->
+                              <div class="text-red-500 hover:text-red-600 cursor-pointer">
+                                  <i class="fas fa-trash-alt" title="Delete"></i>
+                              </div>
                           </div>
+                      </td>
+                  </tr>
+              <% }); %>
+          </tbody>
+        </table>
+      </div>
+    </main>
 
-                          <!-- Delete Icon -->
-                          <div class="text-red-500 hover:text-red-600 cursor-pointer">
-                              <i class="fas fa-trash-alt" title="Delete"></i>
-                          </div>
-                      </div>
-                  </td>
-              </tr>
-          <% }); %>
-      </tbody>
-    </table>
-  </div>
-</main>
-
+  <script>
+    AOS.init();
+  </script>
+</div>
 
 <%- include('../partials/shared/newsletter'); %>

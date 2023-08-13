@@ -2,7 +2,11 @@
 
 <div class="mt-20"><%- include('../partials/shared/banner', {header : "Job Details"}); %></div>
 
-<!-- main container is used to set the max-width -->
+<div data-aos="fade-out"
+      data-aos-easing="linear"
+     data-aos-duration="1500">
+
+        <!-- main container is used to set the max-width -->
 <div class="main-container w-10/12 mx-auto py-20 lg:max-w-5xl xl:max-w-screen-xl">
   <!-- this div is the container of all the cards - used to set grid -->
   <div class="grid-set gap-8 grid grid-cols-1 lg:grid-cols-3">
@@ -172,4 +176,10 @@
     %> <%- include ('../components/molecule/featured-card', element); %> <% }) %>
   </div>
 </div>
+
+  <script>
+    AOS.init();
+  </script>     
+</div>
+
 <%- include('../partials/shared/newsletter'); %>

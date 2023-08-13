@@ -3,7 +3,12 @@
   <div class="mt-20">
   <%- include('../partials/shared/banner', {header: "Browse Job"}); %>
   </div>
-    <!-- Parent Div -->
+
+<div data-aos="fade-out"
+      data-aos-easing="linear"
+     data-aos-duration="1500">
+
+     <!-- Parent Div -->
     <div class="flex flex-col justify-center lg:flex-row overflow-hidden">
       <!-- Left Side Parent Div-->
       <div class="lg:p-10 flex flex-col gap-6 items-center">
@@ -190,4 +195,9 @@
 
       <!-- End of Parent Div -->
     </div>
-    <%- include("../partials/shared/newsletter.ejs") %>
+
+<script>
+    AOS.init();
+  </script> 
+</div>
+<%- include("../partials/shared/newsletter.ejs") %>

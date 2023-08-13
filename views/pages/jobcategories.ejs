@@ -3,68 +3,77 @@
 <div class="mt-20">
 <%- include('../partials/shared/banner', {header : "Browse Categories"}); %>
 </div>
-<section class="bg-grayBg min-h-fit py-20">
-    <div class="job-categories-container w-10/12 mx-auto  lg:max-w-5xl xl:max-w-screen-xl">
-      <div class="job-categories-heading text-center mx-auto mb-9 lg:w-8/12">
-        <h2 class="font-poppins text-title text-3xl font-bold mb-4 md:text-4xl">Job Categories</h2>
+
+<div data-aos="fade-out"
+      data-aos-easing="linear"
+     data-aos-duration="1700">
+
+     <section class="bg-grayBg min-h-fit py-20">
+      <div class="job-categories-container w-10/12 mx-auto  lg:max-w-5xl xl:max-w-screen-xl">
+        <div class="job-categories-heading text-center mx-auto mb-9 lg:w-8/12">
+          <h2 class="font-poppins text-title text-3xl font-bold mb-4 md:text-4xl">Job Categories</h2>
+        </div>
+    
+        <div class="job-categories-card-container px-3 grid grid-cols-1 gap-7 md:grid-cols-2 lg:grid-cols-4">
+          <% const categoryCardContent = [
+              {
+                icon: '<i class="fa-solid fa-code text-4xl" style="color: #ffffff"></i>',
+                heading: "Web & Software Dev",
+                subHeading: "122 jobs",
+              },
+              {
+              icon: '<i class="fa-solid fa-pen-ruler text-4xl" style="color: #ffffff"></i>',
+                heading: "Data Science & Analytics",
+                subHeading: "155 jobs",
+              },
+              {
+              icon: '<i class="fa-solid fa-briefcase text-4xl" style="color: #ffffff"></i>',
+                heading: "Accounting & Consulting",
+                subHeading: "300 jobs",
+              },
+              {
+                icon: '<i class="fa-solid fa-language text-4xl" style="color: #ffffff"></i>',
+                heading: "Writing & Translations",
+                subHeading: "80 jobs",
+              },
+              {
+                icon: ' <i class="fa-solid fa-comments-dollar text-4xl" style="color: #ffffff"></i>',
+                heading: "Sales & Marketing",
+                subHeading: "120 jobs",
+              },
+              {
+                icon: '<i class="fa-solid fa-palette text-4xl" style="color: #ffffff"></i>',
+                heading: "Graphics & Design",
+                subHeading: "78 jobs",
+              },
+              {
+                icon: '<i class="fa-solid fa-globe text-4xl" style="color: #ffffff"></i>',
+                heading: "Digital Marketing",
+                subHeading: "90 jobs",
+              },
+              {
+                icon: '<i class="fa-solid fa-chalkboard-user text-4xl" style="color: #ffffff"></i>',
+                heading: "Education & Training",
+                subHeading: "210 jobs",
+              }
+              ]; %>
+    
+              <% categoryCardContent.forEach(element => { %>   
+            <%- include ('../components/molecule/category-card', element); %>
+          <% }) %>
+        </div>
+        
+        <!-- view all categories button -->
         
       </div>
-  
-      <div class="job-categories-card-container px-3 grid grid-cols-1 gap-7 md:grid-cols-2 lg:grid-cols-4">
-        <% const categoryCardContent = [
-            {
-              icon: '<i class="fa-solid fa-code text-4xl" style="color: #ffffff"></i>',
-              heading: "Web & Software Dev",
-              subHeading: "122 jobs",
-            },
-            {
-            icon: '<i class="fa-solid fa-pen-ruler text-4xl" style="color: #ffffff"></i>',
-              heading: "Data Science & Analytics",
-              subHeading: "155 jobs",
-            },
-            {
-             icon: '<i class="fa-solid fa-briefcase text-4xl" style="color: #ffffff"></i>',
-              heading: "Accounting & Consulting",
-              subHeading: "300 jobs",
-            },
-            {
-              icon: '<i class="fa-solid fa-language text-4xl" style="color: #ffffff"></i>',
-              heading: "Writing & Translations",
-              subHeading: "80 jobs",
-            },
-            {
-              icon: ' <i class="fa-solid fa-comments-dollar text-4xl" style="color: #ffffff"></i>',
-              heading: "Sales & Marketing",
-              subHeading: "120 jobs",
-            },
-            {
-              icon: '<i class="fa-solid fa-palette text-4xl" style="color: #ffffff"></i>',
-              heading: "Graphics & Design",
-              subHeading: "78 jobs",
-            },
-            {
-              icon: '<i class="fa-solid fa-globe text-4xl" style="color: #ffffff"></i>',
-              heading: "Digital Marketing",
-              subHeading: "90 jobs",
-            },
-            {
-              icon: '<i class="fa-solid fa-chalkboard-user text-4xl" style="color: #ffffff"></i>',
-              heading: "Education & Training",
-              subHeading: "210 jobs",
-            }
-            ]; %>
-  
-            <% categoryCardContent.forEach(element => { %>   
-          <%- include ('../components/molecule/category-card', element); %>
-        <% }) %>
+      <div class="mt-12">
+        <%- include('../components/atom/pagination'); %>
       </div>
-      
-       <!-- view all categories button -->
-      
-    </div>
-    <div class="mt-12">
-      <%- include('../components/atom/pagination'); %>
-    </div>
   </section>
-    <%- include('../partials/shared/newsletter'); %>
+
+  <script>
+    AOS.init();
+  </script>
+</div>
+  <%- include('../partials/shared/newsletter'); %>
     
