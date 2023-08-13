@@ -1,0 +1,26 @@
+<% title = "Register" %>
+
+<div class="mt-20">
+    <%- include('../partials/shared/banner', {header : "Register"}); %>
+</div>
+
+<div class="flex min-h-full flex-col justify-center py-12 sm:px-6 lg:px-8 mb-10">
+    <%- include("../partials/login/header", {Header : "Register"}) %>  
+  
+    <div class="mt-8 sm:mx-auto sm:w-full sm:max-w-md">
+      <div class="accountform bg-white px-4 py-8 shadow sm:rounded-lg sm:px-10">
+        <form class="space-y-6" action="#" method="POST">
+          <%- include("../partials/register/fill-up") %>
+          <%- include("../components/atom/button", {Button : "Sign up"}) %>
+        </form>
+        
+        <div class="mt-6">
+            <%- include("../partials/login/header-social") %>
+            <%- include("../partials/login/social") %>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+
+  <%- include("../partials/shared/newsletter.ejs") %>

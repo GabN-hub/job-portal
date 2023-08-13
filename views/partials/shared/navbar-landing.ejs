@@ -13,9 +13,9 @@
      <div class="nav-pages hidden lg:flex lg:items-center lg:gap-4 lg:ml-5 xl:gap-5">
       <a href="/" class="home font-semibold <%= title !== 'landing' ? 'hover:text-green-500 duration-300 ease-in-out' : '' %>">Home</a>
       <a href="/candidate" class="font-semibold <%= title !== 'landing' ? 'hover:text-green-500 duration-300 ease-in-out' : '' %>">Candidate</a>
-      <a href="/" class="font-semibold <%= title !== 'landing' ? 'hover:text-green-500 duration-300 ease-in-out' : '' %>">Dashboard</a>
+      <a href="/dashboard" class="font-semibold <%= title !== 'landing' ? 'hover:text-green-500 duration-300 ease-in-out' : '' %>">Dashboard</a>
     
-      <!-- hover drop down in nav links -->
+      <!-- hover drop down in nav links (only in lg screens)-->
         <div x-data="{ isOpen: false }" class="relative inline-block">
           <div @mouseenter="isOpen = true" @mouseleave="isOpen = false" class="flex items-center justify-center gap-4 cursor-pointer">
               <a href="#" class="font-semibold <%= title !== 'landing' ? 'hover:text-green-500 duration-300 ease-in-out' : '' %>">Job <i class="fa-solid fa-angle-down"></i></a>
@@ -49,11 +49,11 @@
     <div class="nav-buttons hidden lg:flex lg:items-center lg:gap-2">
       <div class="bg-btngreen flex items-center gap-3 py-2 px-4 rounded-md text-white hover:bg-green-700 duration-500 ease-in-out">
         <i class="fa-regular fa-user" style="color: #ffffff"></i>
-        <a href="" class="monstreat font-semibold">Login</a>
+        <a href="/login" class="monstreat font-semibold">Login</a>
       </div>
       <div class="bg-btngreen flex items-center gap-3 py-2 px-4 rounded-md text-white hover:bg-green-700 duration-500 ease-in-out">
         <i class="fa-solid fa-briefcase" style="color: #ffffff"></i>
-        <a href="" class="monstreat font-semibold">Register</a>
+        <a href="/register" class="monstreat font-semibold">Register</a>
       </div>
     </div>
   
@@ -66,7 +66,7 @@
     <div class="flex flex-col w-10/12 mx-auto">
       <a href="/" class="home text-title font-semibold text-right p-2 border-b border-gray-500 hover:bg-gray-100">Home</a>
       <a href="/candidate" class="text-title font-semibold text-right p-2 border-b border-gray-500 hover:bg-gray-100">Candidate</a>
-      <a href="/" class="text-title font-semibold text-right p-2 border-b border-gray-500 hover:bg-gray-100">Dashboard</a>
+      <a href="/dashboard" class="text-title font-semibold text-right p-2 border-b border-gray-500 hover:bg-gray-100">Dashboard</a>
       <a href="/jobdetails" class="text-title font-semibold text-right p-2 border-b border-gray-500 hover:bg-gray-100">Job Details</a>
       <a href="/joblist" class="text-title font-semibold text-right p-2 border-b border-gray-500 hover:bg-gray-100">Job List</a>
       <a href="/jobcategories" class="text-title font-semibold text-right p-2 border-b border-gray-500 hover:bg-gray-100">Job Categories</a>
@@ -75,13 +75,13 @@
     <div class="w-10/12 mx-auto pt-2">
       <div class="bg-btngreen flex items-center justify-center gap-3 py-2 px-4 rounded-full w-36 ml-auto hover:bg-green-700 duration-500 ease-in-out">
         <i class="fa-regular fa-user" style="color: #ffffff"></i>
-        <a href="" class="text-white font-semibold">Login</a>
+        <a href="/login" class="text-white font-semibold">Login</a>
       </div>
     </div>
     <div class="w-10/12 mx-auto pt-2">
       <div class="bg-btngreen flex items-center justify-center gap-3 py-2 px-4 rounded-full w-36 ml-auto hover:bg-green-700 duration-500 ease-in-out">
         <i class="fa-solid fa-briefcase" style="color: #ffffff"></i>
-        <a href="" class="text-white font-semibold">Register</a>
+        <a href="/register" class="text-white font-semibold">Register</a>
       </div>
     </div>
     

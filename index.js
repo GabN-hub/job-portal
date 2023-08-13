@@ -30,5 +30,18 @@ app.get("/jobdetails", function (req, res) {
   res.render("pages/jobdetails");
 });
 
+app.get("/login", function (req, res) {
+  res.render("pages/login");
+});
+
+app.get("/register", function (req, res) {
+  res.render("pages/register");
+});
+
+app.get("/dashboard", function (req, res) {
+  res.render("pages/dashboard");
+});
+
+
 app.listen(3000);
 console.log("Server is running");

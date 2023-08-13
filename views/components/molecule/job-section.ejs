@@ -1,4 +1,8 @@
 <div class="flex gap-5">
     <span class="w-36 text-categories font-medium"><%= label %></span>
-    <span class="text-categories font-medium green-highlight"><%= value %></span>
+    <% if (value === "HTML, CSS, Java, Php") { %>
+        <span class="text-categories font-medium green-highlight"><%= value %></span>
+    <% } else { %>
+        <span class="text-categories font-medium"><%= value %></span>
+    <% } %>
 </div>
