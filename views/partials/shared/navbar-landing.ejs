@@ -15,7 +15,7 @@
       <a href="/candidate" class="font-semibold <%= title !== 'landing' ? 'hover:text-green-500 duration-300 ease-in-out' : '' %>">Candidate</a>
       <a href="/dashboard" class="font-semibold <%= title !== 'landing' ? 'hover:text-green-500 duration-300 ease-in-out' : '' %>">Dashboard</a>
     
-      <!-- hover drop down in nav links -->
+      <!-- hover drop down in nav links (only in lg screens)-->
         <div x-data="{ isOpen: false }" class="relative inline-block">
           <div @mouseenter="isOpen = true" @mouseleave="isOpen = false" class="flex items-center justify-center gap-4 cursor-pointer">
               <a href="#" class="font-semibold <%= title !== 'landing' ? 'hover:text-green-500 duration-300 ease-in-out' : '' %>">Job <i class="fa-solid fa-angle-down"></i></a>
@@ -66,7 +66,7 @@
     <div class="flex flex-col w-10/12 mx-auto">
       <a href="/" class="home text-title font-semibold text-right p-2 border-b border-gray-500 hover:bg-gray-100">Home</a>
       <a href="/candidate" class="text-title font-semibold text-right p-2 border-b border-gray-500 hover:bg-gray-100">Candidate</a>
-      <a href="/" class="text-title font-semibold text-right p-2 border-b border-gray-500 hover:bg-gray-100">Dashboard</a>
+      <a href="/dashboard" class="text-title font-semibold text-right p-2 border-b border-gray-500 hover:bg-gray-100">Dashboard</a>
       <a href="/jobdetails" class="text-title font-semibold text-right p-2 border-b border-gray-500 hover:bg-gray-100">Job Details</a>
       <a href="/joblist" class="text-title font-semibold text-right p-2 border-b border-gray-500 hover:bg-gray-100">Job List</a>
       <a href="/jobcategories" class="text-title font-semibold text-right p-2 border-b border-gray-500 hover:bg-gray-100">Job Categories</a>

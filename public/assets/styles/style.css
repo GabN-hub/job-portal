@@ -547,12 +547,6 @@ video {
 .z-50 {
   z-index: 50;
 }
-.col-span-3 {
-  grid-column: span 3 / span 3;
-}
-.col-span-5 {
-  grid-column: span 5 / span 5;
-}
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -600,11 +594,11 @@ video {
 .ml-auto {
   margin-left: auto;
 }
-.mr-1 {
-  margin-right: 0.25rem;
-}
 .mr-2 {
   margin-right: 0.5rem;
+}
+.mr-3 {
+  margin-right: 0.75rem;
 }
 .mt-10 {
   margin-top: 2.5rem;
@@ -635,12 +629,6 @@ video {
 }
 .mt-8 {
   margin-top: 2rem;
-}
-.ml-8 {
-  margin-left: 2rem;
-}
-.mr-3 {
-  margin-right: 0.75rem;
 }
 .block {
   display: block;
@@ -743,6 +731,9 @@ video {
 .w-40 {
   width: 10rem;
 }
+.w-44 {
+  width: 11rem;
+}
 .w-5 {
   width: 1.25rem;
 }
@@ -769,15 +760,6 @@ video {
   width: -moz-max-content;
   width: max-content;
 }
-.w-1\/5 {
-  width: 20%;
-}
-.w-56 {
-  width: 14rem;
-}
-.w-44 {
-  width: 11rem;
-}
 .max-w-7xl {
   max-width: 80rem;
 }
@@ -788,14 +770,8 @@ video {
 .max-w-sm {
   max-width: 24rem;
 }
-.max-w-3xl {
-  max-width: 48rem;
-}
 .flex-1 {
   flex: 1 1 0%;
-}
-.table-fixed {
-  table-layout: fixed;
 }
 .scale-100 {
   --tw-scale-x: 1;
@@ -821,9 +797,6 @@ video {
 }
 .grid-cols-3 {
   grid-template-columns: repeat(3, minmax(0, 1fr));
-}
-.grid-cols-5 {
-  grid-template-columns: repeat(5, minmax(0, 1fr));
 }
 .grid-rows-2 {
   grid-template-rows: repeat(2, minmax(0, 1fr));
@@ -901,19 +874,11 @@ video {
   margin-top: calc(2rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(2rem * var(--tw-space-y-reverse));
 }
-.space-x-8 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-x-reverse: 0;
-  margin-right: calc(2rem * var(--tw-space-x-reverse));
-  margin-left: calc(2rem * calc(1 - var(--tw-space-x-reverse)));
-}
 .overflow-auto {
   overflow: auto;
 }
 .overflow-hidden {
   overflow: hidden;
-}
-.overflow-x-auto {
-  overflow-x: auto;
 }
 .rounded {
   border-radius: 0.25rem;
@@ -1010,10 +975,6 @@ video {
   --tw-bg-opacity: 1;
   background-color: rgb(248 250 251 / var(--tw-bg-opacity));
 }
-.bg-green-200 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(187 247 208 / var(--tw-bg-opacity));
-}
 .bg-green-600 {
   --tw-bg-opacity: 1;
   background-color: rgb(22 163 74 / var(--tw-bg-opacity));
@@ -1024,50 +985,6 @@ video {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-.bg-pink-500 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(236 72 153 / var(--tw-bg-opacity));
-}
-.bg-green-300 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(134 239 172 / var(--tw-bg-opacity));
-}
-.bg-yellow-200 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(254 240 138 / var(--tw-bg-opacity));
-}
-.bg-blue-200 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(191 219 254 / var(--tw-bg-opacity));
-}
-.bg-red-200 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(254 202 202 / var(--tw-bg-opacity));
-}
-.bg-violet-400 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(167 139 250 / var(--tw-bg-opacity));
-}
-.bg-gray-900 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(17 24 39 / var(--tw-bg-opacity));
-}
-.bg-pink-100 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(252 231 243 / var(--tw-bg-opacity));
-}
-.bg-yellow-300 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(253 224 71 / var(--tw-bg-opacity));
-}
-.bg-pink-200 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(251 207 232 / var(--tw-bg-opacity));
-}
-.bg-pink-300 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(249 168 212 / var(--tw-bg-opacity));
 }
 .bg-opacity-20 {
   --tw-bg-opacity: 0.2;
@@ -1086,9 +1003,6 @@ video {
 }
 .p-2 {
   padding: 0.5rem;
-}
-.p-20 {
-  padding: 5rem;
 }
 .p-3 {
   padding: 0.75rem;
@@ -1166,6 +1080,10 @@ video {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
 }
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
 .py-6 {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
@@ -1173,10 +1091,6 @@ video {
 .py-8 {
   padding-top: 2rem;
   padding-bottom: 2rem;
-}
-.py-4 {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
 }
 .pb-3 {
   padding-bottom: 0.75rem;
@@ -1716,26 +1630,6 @@ footer {
   .md\:border-gray-400 {
     --tw-border-opacity: 1;
     border-color: rgb(156 163 175 / var(--tw-border-opacity));
-  }
-
-  .md\:px-14 {
-    padding-left: 3.5rem;
-    padding-right: 3.5rem;
-  }
-
-  .md\:px-2 {
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-  }
-
-  .md\:px-20 {
-    padding-left: 5rem;
-    padding-right: 5rem;
-  }
-
-  .md\:px-5 {
-    padding-left: 1.25rem;
-    padding-right: 1.25rem;
   }
 
   .md\:py-6 {
