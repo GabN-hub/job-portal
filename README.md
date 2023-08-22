@@ -13,7 +13,13 @@ Remote.ly is a job portal providing jobs related to IT and networking, data scie
 ## Technologies used
 - html
 - ejs
+- css
 - tailwind
+- javascript
 - node
 - express
 - onrender : for hosting
+
+## JS Libraries used
+- Alphine JS
+- AOS
